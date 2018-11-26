@@ -2,8 +2,8 @@
 layout: post
 title:  设计模式有什么用
 date:   2018-10-26 23:21:00 +0800
-categories: 深入理解Java并发
-tag: 深入理解Java并发
+categories: 设计模式
+tag: 设计模式
 ---
 
 * content
