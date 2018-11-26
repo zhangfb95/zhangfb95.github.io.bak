@@ -1,0 +1,54 @@
+---
+layout: post
+title:  抽象工厂模式
+date:   2018-10-26 23:30:00 +0800
+categories: 设计模式
+tag: 设计模式
+---
+
+* content
+{:toc}
+
+### 简介
+
+如果我们简单工厂中的每个工厂扩展其功能，使其能够生产多种产品，那么工厂方法就演变成了抽象工厂模式。
+
+### 示例
+
+产品抽象
+
+```java
+interface Car {}
+class Jeep implements Car {}
+class Porsche implements Car {}
+```
+
+工厂抽象
+
+```java
+interface Producer {
+	Car produceJeep();
+	Car producePorsche();
+}
+class JihuiProducer implements Producer {
+	@Override public Car produceJeep() { return new Jeep("jihui jeep"); }
+	@Override public Car producePorsche() { return new Porsche("jihui porsche"); }
+}
+class LailiProducer implements Producer {
+	@Override public Car produceJeep() { return new Jeep("Laili jeep"); }
+    @Override public Car producePorsche() { return new Porsche("Laili porsche"); }
+}
+```
+
+Client
+
+```java
+public class Main {
+	public static void main(String[] args) {
+        Producer producer1 = new JeepProducer();
+        Car jeep = producer1.produce();
+        Producer producer2 = new PorscheProducer();
+        Car porsche = producer2.produce();
+    }
+}
+```
