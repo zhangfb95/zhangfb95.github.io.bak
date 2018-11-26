@@ -332,7 +332,15 @@ public class FibonacciTest {
     //@Parameterized.Parameters
     @Parameterized.Parameters(name = "{index}: fib({0})={1}")
     public static Collection data() {
-        return Arrays.asList(new Object[][]{{0, 0}, {1, 1}, {2, 1}, {3, 2}, {4, 3}, {5, 5}, {6, 8}});
+        List<Object[]> list = new ArrayList<>();
+        list.add(new Object[] {0, 0});
+        list.add(new Object[] {1, 1});
+        list.add(new Object[] {2, 1});
+        list.add(new Object[] {3, 2});
+        list.add(new Object[] {4, 3});
+        list.add(new Object[] {5, 5});
+        list.add(new Object[] {6, 8});
+        return list;
     }
 
     private int input;
