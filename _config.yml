@@ -4,11 +4,11 @@ email: zhangfb95@aliyun.com
 author: zhangfb95
 url: http://open.juconcurrent.com
 resume_site: http://www.hifreud.com/Resume.io/
-github: https://github.com/luoyan35714/
+github: https://github.com/zhangfb95/
 baseurl: "/"
-description: Actually, less is more!
-meta_description: 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
+description: Juconcurrent, Nice to meet you!
+meta_description: 付兵;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+motto: 你掌握了的叫知识，你没有掌握的只能叫信息
 banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
@@ -17,7 +17,7 @@ paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-github_username: luoyan35714
+github_username: zhangfb95
 
 # Build settings
 markdown: kramdown
