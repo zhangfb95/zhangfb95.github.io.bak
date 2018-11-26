@@ -11,602 +11,81 @@ tag: 深入理解Tomcat
 
 ## 前言
 
-在上一小节我们简单分析了一下Pipeline和Valve，并给出了整体的结构图。而这一节，我们将详细分析Tomcat里面的源码。
+Tomcat的前身为Catalina，而Catalina又是一个轻量级的Servlet容器。在美国，catalina是一个很美的小岛。所以Tomcat作者的寓意可能是想把Tomcat设计成一个优雅美丽且轻量级的web服务器。Tomcat从4.x版本开始除了作为支持Servlet的容器外，额外加入了很多的功能，比如：jsp、el、naming等等，所以说Tomcat不仅仅是Catalina。
+
+既然Tomcat首先是一个Servlet容器，我们应该更多的关心Servlet。
+
+那么，什么是Servlet呢？
+
+在互联网兴起之初，当时的Sun公司（后面被Oracle收购）已然看到了这次机遇，于是设计出了Applet来对Web应用的支持。不过事实却并不是预期那么得好，Sun悲催地发现Applet并没有给业界带来多大的影响。经过反思，Sun就想既然机遇出现了，市场前景也非常不错，总不能白白放弃了呀，怎么办呢？于是又投入精力去搞一套规范出来，这时Servlet诞生了！
+
+> 所谓Servlet，其实就是Sun为了让Java能实现动态可交互的网页，从而进入Web编程领域而制定的一套标准！
+
+一个Servlet主要做下面三件事情：
+
+1. 创建并填充Request对象，包括：URI、参数、method、请求头信息、请求体信息等
+2. 创建Response对象
+3. 执行业务逻辑，将结果通过Response的输出流输出到客户端
+
+Servlet没有main方法，所以，如果要执行，则需要在一个`容器`里面才能执行，这个容器就是为了支持Servlet的功能而存在，Tomcat其实就是一个Servlet容器的实现。
+
+## 整体架构图
+
+![整体架构图](https://upload-images.jianshu.io/upload_images/845143-523d7f34094a2911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+从上图我们看出，最核心的两个组件--连接器（Connector）和容器（Container）起到`心脏`的作用，他们至关重要！下面我们逐一来分析其功能：
+
+1. `Server`表示服务器，提供了一种优雅的方式来启动和停止整个系统，不必单独启停连接器和容器
+2. `Service`表示服务，`Server`可以运行多个服务。比如一个Tomcat里面可运行订单服务、支付服务、用户服务等等
+3. 每个`Service`可包含`多个Connector`和`一个Container`。因为每个服务允许同时支持多种协议，但是每种协议最终执行的Servlet却是相同的
+4. `Connector`表示连接器，比如一个服务可以同时支持AJP协议、Http协议和Https协议，每种协议可使用一种连接器来支持
+5. `Container`表示容器，可以看做Servlet容器
+    + `Engine` -- 引擎
+    + `Host` -- 主机
+    + `Context` -- 上下文
+    + `Wrapper` -- 包装器
+6. Service服务之下还有各种`支撑组件`，下面简单罗列一下这些组件
+    + `Manager` -- 管理器，用于管理会话Session
+    + `Logger` -- 日志器，用于管理日志
+    + `Loader` -- 加载器，和类加载有关，只会开放给Context所使用
+    + `Pipeline` -- 管道组件，配合Valve实现过滤器功能
+    + `Valve` -- 阀门组件，配合Pipeline实现过滤器功能
+    + `Realm` -- 认证授权组件
+
+除了连接器和容器，管道组件和阀门组件也很关键，我们通过一张图来看看这两个组件
 
 ![pipeline+valve](https://upload-images.jianshu.io/upload_images/845143-286605040f90d472.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## Valve
+## 换位思考Tomcat架构
 
-`Valve`作为一个个基础的阀门，扮演着业务实际执行者的角色。我们看看`Valve`这个接口有哪些方法。
+我们从大的方向来看下Tomcat架构，大体涉及到下面3个方面。
 
-```java
-public interface Valve {
-    // 获取下一个阀门
-    public Valve getNext();
-    // 设置下一个阀门
-    public void setNext(Valve valve);
-    // 后台执行逻辑，主要在类加载上下文中使用到
-    public void backgroundProcess();
-    // 执行业务逻辑
-    public void invoke(Request request, Response response)
-        throws IOException, ServletException;
-    // 是否异步执行
-    public boolean isAsyncSupported();
-}
-```
+1. 基于组件的架构
+2. 基于JMX
+3. 基于生命周期
 
-## Contained
+首先，我们说一下什么是`基于组件的架构`
 
-`ValveBase`、`Pipeline`及其他相关组件都实现了`Contained`接口，我们看看这个接口有哪些方法。很简单，就是get/set容器操作。
+> 通过上一小节，我们知道了组成Tomcat的是各种各样的组件，每个组件各司其职，组件与组件之间有明确的职责划分，同时组件与组件之间又通过一定的联系相互通信。Tomcat整体就是一个个组件的堆砌！
 
-```java
-public interface Contained {
+其次，我们说一下为什么是`基于JMX`
 
-    /**
-     * Get the {@link Container} with which this instance is associated.
-     *
-     * @return The Container with which this instance is associated or
-     *         <code>null</code> if not associated with a Container
-     */
-    Container getContainer();
+> 我们在后续阅读Tomcat源码的时候，会发现代码里充斥着大量的类似于下面的代码。
+`Registry.getRegistry(null, null).invoke(mbeans, "init", false); `
+`Registry.getRegistry(null, null).invoke(mbeans, "start", false); `
+而这实际上就是通过JMX来管理相应对象的代码。这儿我们不会详细讲述什么是JMX，我们只是简单地说明一下JMX的概念，参考[JMX百度百科](https://baike.baidu.com/item/JMX/2829357?fr=aladdin)。
+JMX（Java Management Extensions，即Java管理扩展）是一个为应用程序、设备、系统等[植入](https://baike.baidu.com/item/%E6%A4%8D%E5%85%A5/7958584)管理功能的框架。JMX可以跨越一系列异构操作系统平台、[系统体系结构](https://baike.baidu.com/item/%E7%B3%BB%E7%BB%9F%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/6842760)和[网络传输协议](https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE/332131)，灵活的开发无缝集成的系统、网络和服务管理应用。
 
+最后，我们说一下为什么是基于生命周期。
 
-    /**
-     * Set the <code>Container</code> with which this instance is associated.
-     *
-     * @param container The Container instance with which this instance is to
-     *  be associated, or <code>null</code> to disassociate this instance
-     *  from any Container
-     */
-    void setContainer(Container container);
-}
-```
-
-## ValveBase
-
-从Valve的类层次结构，我们发现几乎所有Valve都继承了`ValveBase`这个抽象类，所以这儿我们需要分析一下它。
-
-![Valve类层次结构](https://upload-images.jianshu.io/upload_images/845143-dd669cf1ca0d963a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-```java
-public abstract class ValveBase extends LifecycleMBeanBase implements Contained, Valve {
-    // 国际化管理器，可以支持多国语言
-    protected static final StringManager sm = StringManager.getManager(ValveBase.class);
-
-    //------------------------------------------------------ Instance Variables
-
-    // 无参构造方法，默认不支持异步
-    public ValveBase() {
-        this(false);
-    }
-    // 有参构造方法，可传入异步支持标记
-    public ValveBase(boolean asyncSupported) {
-        this.asyncSupported = asyncSupported;
-    }
-
-
-    //------------------------------------------------------ Instance Variables
-
-    // 异步标记
-    protected boolean asyncSupported;
-    // 所属容器
-    protected Container container = null;
-    // 容器日志组件对象
-    protected Log containerLog = null;
-    // 下一个阀门
-    protected Valve next = null;
-
-
-    //-------------------------------------------------------------- Properties
-
-    // 获取所属容器
-    @Override
-    public Container getContainer() {
-        return container;
-    }
-    // 设置所属容器
-    @Override
-    public void setContainer(Container container) {
-        this.container = container;
-    }
-    // 是否异步执行
-    @Override
-    public boolean isAsyncSupported() {
-        return asyncSupported;
-    }
-    // 设置是否异步执行
-    public void setAsyncSupported(boolean asyncSupported) {
-        this.asyncSupported = asyncSupported;
-    }
-    // 获取下一个待执行的阀门
-    @Override
-    public Valve getNext() {
-        return next;
-    }
-    // 设置下一个待执行的阀门
-    @Override
-    public void setNext(Valve valve) {
-        this.next = valve;
-    }
-
-
-    //---------------------------------------------------------- Public Methods
-
-    // 后台执行，子类实现
-    @Override
-    public void backgroundProcess() {
-        // NOOP by default
-    }
-    // 初始化逻辑
-    @Override
-    protected void initInternal() throws LifecycleException {
-        super.initInternal();
-        // 设置容器日志组件对象到当前阀门的containerLog属性
-        containerLog = getContainer().getLogger();
-    }
-    // 启动逻辑
-    @Override
-    protected synchronized void startInternal() throws LifecycleException {
-        setState(LifecycleState.STARTING);
-    }
-    // 停止逻辑
-    @Override
-    protected synchronized void stopInternal() throws LifecycleException {
-        setState(LifecycleState.STOPPING);
-    }
-    // 重写toString，格式为[${containerName}]
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder(this.getClass().getName());
-        sb.append('[');
-        if (container == null) {
-            sb.append("Container is null");
-        } else {
-            sb.append(container.getName());
-        }
-        sb.append(']');
-        return sb.toString();
-    }
-
-
-    // -------------------- JMX and Registration  --------------------
-
-    // 设置获取MBean对象的keyProperties，格式如：a=b,c=d,e=f...
-    @Override
-    public String getObjectNameKeyProperties() {
-        StringBuilder name = new StringBuilder("type=Valve");
-
-        Container container = getContainer();
-
-        name.append(container.getMBeanKeyProperties());
-
-        int seq = 0;
-
-        // Pipeline may not be present in unit testing
-        Pipeline p = container.getPipeline();
-        if (p != null) {
-            for (Valve valve : p.getValves()) {
-                // Skip null valves
-                if (valve == null) {
-                    continue;
-                }
-                // Only compare valves in pipeline until we find this valve
-                if (valve == this) {
-                    break;
-                }
-                if (valve.getClass() == this.getClass()) {
-                    // Duplicate valve earlier in pipeline
-                    // increment sequence number
-                    seq ++;
-                }
-            }
-        }
-
-        if (seq > 0) {
-            name.append(",seq=");
-            name.append(seq);
-        }
-
-        String className = this.getClass().getName();
-        int period = className.lastIndexOf('.');
-        if (period >= 0) {
-            className = className.substring(period + 1);
-        }
-        name.append(",name=");
-        name.append(className);
-
-        return name.toString();
-    }
-    // 获取所属域，从container获取
-    @Override
-    public String getDomainInternal() {
-        Container c = getContainer();
-        if (c == null) {
-            return null;
-        } else {
-            return c.getDomain();
-        }
-    }
-}
-```
-
-## Pipeline
-
-`Pipeline`作为一个管道，我们可以简单认为是一个Valve的集合，内部会对这个集合进行遍历，调用每个元素的业务逻辑方法`invoke()`。
-
-是不是这样呢？我们还是分析一下源码，先看看接口定义。
-
-```java
-public interface Pipeline {
-    // ------------------------------------------------------------- Properties
-
-    // 获取基本阀门
-    public Valve getBasic();
-    // 设置基本阀门
-    public void setBasic(Valve valve);
-
-    // --------------------------------------------------------- Public Methods
-
-    // 添加阀门
-    public void addValve(Valve valve);
-    // 获取阀门数组
-    public Valve[] getValves();
-    // 删除阀门
-    public void removeValve(Valve valve);
-    // 获取首个阀门
-    public Valve getFirst();
-    // 管道内所有阀门是否异步执行
-    public boolean isAsyncSupported();
-    // 获取管道所属的容器
-    public Container getContainer();
-    // 设置管道所属的容器
-    public void setContainer(Container container);
-    // 查找非异步执行的所有阀门，并放置到result参数中，所以result不允许为null
-    public void findNonAsyncValves(Set<String> result);
-}
-```
-
-## StandardPipeline
-
-接着我们分析一下`Pipeline`唯一的实现`StandardPipeline`。代码很长，但是都很简单。
-
-```java
-public class StandardPipeline extends LifecycleBase
-        implements Pipeline, Contained {
-
-    private static final Log log = LogFactory.getLog(StandardPipeline.class);
-
-    // ----------------------------------------------------------- Constructors
-
-    // 构造一个没有所属容器的管道
-    public StandardPipeline() {
-        this(null);
-    }
-
-    // 构造一个有所属容器的管道
-    public StandardPipeline(Container container) {
-        super();
-        setContainer(container);
-    }
-
-    // ----------------------------------------------------- Instance Variables
-
-    /**
-     * 基本阀门，最后执行的阀门
-     */
-    protected Valve basic = null;
-
-    /**
-     * 管道所属的容器
-     */
-    protected Container container = null;
-
-    /**
-     * 管道里面的首个执行的阀门
-     */
-    protected Valve first = null;
-
-    // --------------------------------------------------------- Public Methods
-
-    // 是否异步执行，如果一个阀门都没有，或者所有阀门都是异步执行的，才返回true
-    @Override
-    public boolean isAsyncSupported() {
-        Valve valve = (first!=null)?first:basic;
-        boolean supported = true;
-        while (supported && valve!=null) {
-            supported = supported & valve.isAsyncSupported();
-            valve = valve.getNext();
-        }
-        return supported;
-    }
-
-    // 查找所有未异步执行的阀门
-    @Override
-    public void findNonAsyncValves(Set<String> result) {
-        Valve valve = (first!=null) ? first : basic;
-        while (valve != null) {
-            if (!valve.isAsyncSupported()) {
-                result.add(valve.getClass().getName());
-            }
-            valve = valve.getNext();
-        }
-    }
-
-    // ------------------------------------------------------ Contained Methods
-
-    // 获取所属容器
-    @Override
-    public Container getContainer() {
-        return (this.container);
-    }
-
-    // 设置所属容器
-    @Override
-    public void setContainer(Container container) {
-        this.container = container;
-    }
-
-    // 初始化逻辑，默认没有任何逻辑
-    @Override
-    protected void initInternal() {
-        // NOOP
-    }
-
-    // 开始逻辑，调用所有阀门的start方法
-    @Override
-    protected synchronized void startInternal() throws LifecycleException {
-        // Start the Valves in our pipeline (including the basic), if any
-        Valve current = first;
-        if (current == null) {
-            current = basic;
-        }
-        while (current != null) {
-            if (current instanceof Lifecycle)
-                ((Lifecycle) current).start();
-            current = current.getNext();
-        }
-
-        setState(LifecycleState.STARTING);
-    }
-
-    // 停止逻辑，调用所有阀门的stop方法
-    @Override
-    protected synchronized void stopInternal() throws LifecycleException {
-        setState(LifecycleState.STOPPING);
-
-        // Stop the Valves in our pipeline (including the basic), if any
-        Valve current = first;
-        if (current == null) {
-            current = basic;
-        }
-        while (current != null) {
-            if (current instanceof Lifecycle)
-                ((Lifecycle) current).stop();
-            current = current.getNext();
-        }
-    }
-
-    // 销毁逻辑，移掉所有阀门，调用removeValve方法
-    @Override
-    protected void destroyInternal() {
-        Valve[] valves = getValves();
-        for (Valve valve : valves) {
-            removeValve(valve);
-        }
-    }
-
-    /**
-     * 重新toString方法
-     */
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder("Pipeline[");
-        sb.append(container);
-        sb.append(']');
-        return sb.toString();
-    }
-
-    // ------------------------------------------------------- Pipeline Methods
-
-    // 获取基础阀门
-    @Override
-    public Valve getBasic() {
-        return (this.basic);
-    }
-
-    // 设置基础阀门
-    @Override
-    public void setBasic(Valve valve) {
-        // Change components if necessary
-        Valve oldBasic = this.basic;
-        if (oldBasic == valve)
-            return;
-
-        // Stop the old component if necessary
-        // 老的基础阀门会被调用stop方法且所属容器置为null
-        if (oldBasic != null) {
-            if (getState().isAvailable() && (oldBasic instanceof Lifecycle)) {
-                try {
-                    ((Lifecycle) oldBasic).stop();
-                } catch (LifecycleException e) {
-                    log.error("StandardPipeline.setBasic: stop", e);
-                }
-            }
-            if (oldBasic instanceof Contained) {
-                try {
-                    ((Contained) oldBasic).setContainer(null);
-                } catch (Throwable t) {
-                    ExceptionUtils.handleThrowable(t);
-                }
-            }
-        }
-
-        // Start the new component if necessary
-        // 新的阀门会设置所属容器，并调用start方法
-        if (valve == null)
-            return;
-        if (valve instanceof Contained) {
-            ((Contained) valve).setContainer(this.container);
-        }
-        if (getState().isAvailable() && valve instanceof Lifecycle) {
-            try {
-                ((Lifecycle) valve).start();
-            } catch (LifecycleException e) {
-                log.error("StandardPipeline.setBasic: start", e);
-                return;
-            }
-        }
-
-        // Update the pipeline
-        // 替换pipeline中的基础阀门，就是讲基础阀门的前一个阀门的next指向当前阀门
-        Valve current = first;
-        while (current != null) {
-            if (current.getNext() == oldBasic) {
-                current.setNext(valve);
-                break;
-            }
-            current = current.getNext();
-        }
-
-        this.basic = valve;
-    }
-
-    // 添加阀门
-    @Override
-    public void addValve(Valve valve) {
-        // Validate that we can add this Valve
-        // 设置所属容器
-        if (valve instanceof Contained)
-            ((Contained) valve).setContainer(this.container);
-
-        // Start the new component if necessary
-        // 调用阀门的start方法
-        if (getState().isAvailable()) {
-            if (valve instanceof Lifecycle) {
-                try {
-                    ((Lifecycle) valve).start();
-                } catch (LifecycleException e) {
-                    log.error("StandardPipeline.addValve: start: ", e);
-                }
-            }
-        }
-
-        // Add this Valve to the set associated with this Pipeline
-        // 设置阀门，将阀门添加到基础阀门的前一个
-        if (first == null) {
-            first = valve;
-            valve.setNext(basic);
-        } else {
-            Valve current = first;
-            while (current != null) {
-                if (current.getNext() == basic) {
-                    current.setNext(valve);
-                    valve.setNext(basic);
-                    break;
-                }
-                current = current.getNext();
-            }
-        }
-
-        container.fireContainerEvent(Container.ADD_VALVE_EVENT, valve);
-    }
-
-    // 获取阀门数组
-    @Override
-    public Valve[] getValves() {
-        ArrayList<Valve> valveList = new ArrayList<>();
-        Valve current = first;
-        if (current == null) {
-            current = basic;
-        }
-        while (current != null) {
-            valveList.add(current);
-            current = current.getNext();
-        }
-
-        return valveList.toArray(new Valve[0]);
-    }
-
-    // JMX方法，在此忽略
-    public ObjectName[] getValveObjectNames() {
-        ArrayList<ObjectName> valveList = new ArrayList<>();
-        Valve current = first;
-        if (current == null) {
-            current = basic;
-        }
-        while (current != null) {
-            if (current instanceof JmxEnabled) {
-                valveList.add(((JmxEnabled) current).getObjectName());
-            }
-            current = current.getNext();
-        }
-
-        return valveList.toArray(new ObjectName[0]);
-    }
-
-    // 移除阀门
-    @Override
-    public void removeValve(Valve valve) {
-        Valve current;
-        if(first == valve) {
-            // 如果待移出的阀门是首个阀门，则首个阀门的下一个阀门变成首个阀门
-            first = first.getNext();
-            current = null;
-        } else {
-            current = first;
-        }
-        // 遍历阀门集合，并进行移除
-        while (current != null) {
-            if (current.getNext() == valve) {
-                current.setNext(valve.getNext());
-                break;
-            }
-            current = current.getNext();
-        }
-
-        if (first == basic) first = null;
-
-        // 设置阀门所属容器为null
-        if (valve instanceof Contained)
-            ((Contained) valve).setContainer(null);
-
-        // 调用待移除阀门的stop方法和destroy方法，并触发移除阀门事件
-        if (valve instanceof Lifecycle) {
-            // Stop this valve if necessary
-            if (getState().isAvailable()) {
-                try {
-                    ((Lifecycle) valve).stop();
-                } catch (LifecycleException e) {
-                    log.error("StandardPipeline.removeValve: stop: ", e);
-                }
-            }
-            try {
-                ((Lifecycle) valve).destroy();
-            } catch (LifecycleException e) {
-                log.error("StandardPipeline.removeValve: destroy: ", e);
-            }
-        }
-
-        container.fireContainerEvent(Container.REMOVE_VALVE_EVENT, valve);
-    }
-
-    // 获取首个阀门，如果阀门列表为null，返回基础阀门
-    @Override
-    public Valve getFirst() {
-        if (first != null) {
-            return first;
-        }
-        return basic;
-    }
-}
-```
+> 我们在第二篇文章中介绍了`Lifecycle接口`。如果我们查阅各个组件的源代码，会发现绝大多数组件实现了该接口，这也就是我们所说的`基于生命周期`。生命周期的各个阶段的触发又是`基于事件`的方式。
+参考link：[深入理解Tomcat（二）Lifecycle](https://www.jianshu.com/p/2a9ffbd00724)
 
 ## 总结
 
-通过上面的代码分析，我们发现了几个关键的设计模式：
+好了，我们已经从整体上看到了Tomcat的结构，但是对于每个组件我们并没有详细分析。后续章节我们会从几个方面来学习Tomcat：
 
-1. 模板方法模式，父类定义框架，子类实现
-2. 责任链模式，就是这儿的管道/阀门的实现方式，每个阀门维护一个next属性指向下一个阀门
+1. 逐一分析各个组件
+2. 通过断点的方式来跟踪Tomcat代码中的一次完整请求
 
-分析之初，我们还以为很复杂。分析之后，我们却发现，高级的东西并不一定复杂，反而简单易懂。或许这就是高级开发比中低级开发更理解软件开发的含义吧~
+希望通过这种方式加深自己对Tomcat的理解，同时给想要深入学习Tomcat的同学带来一些帮助。
