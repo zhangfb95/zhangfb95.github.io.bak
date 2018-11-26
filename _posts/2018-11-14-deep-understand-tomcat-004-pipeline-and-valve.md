@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  深入理解Tomcat（三）架构及组件
-date:   2018-11-13 23:22:00 +0800
+title:  深入理解Tomcat（四）Pipeline和Valve
+date:   2018-11-14 16:59:00 +0800
 categories: 深入理解Tomcat
 tag: 深入理解Tomcat
 ---
