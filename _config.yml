@@ -8,7 +8,7 @@ github: https://github.com/zhangfb95/
 baseurl: "/"
 description: Juconcurrent, Nice to meet you!
 meta_description: 付兵;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: 你掌握了的叫知识，你没有掌握的只能叫信息
+motto:
 banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
