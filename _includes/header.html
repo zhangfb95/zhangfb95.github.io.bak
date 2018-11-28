@@ -26,7 +26,7 @@
         <li>
           {% assign total = 0 %}
           {% for post in site.posts %}
-          {% assign total = total + 1 %}
+          {% assign total = total | plus: 1 %}
           {% endfor %}
             <a><span id="busuanzi_container_site_pv">本站总博客数{{ total }}篇，本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
         </li>
