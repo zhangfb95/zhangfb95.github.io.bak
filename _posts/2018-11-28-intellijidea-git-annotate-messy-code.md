@@ -2,8 +2,8 @@
 layout: post
 title:  Intellij Idea - git annotate功能显示中文乱码
 date:   2018-11-28 09:48:00 +0800
-categories: intellij idea
-tag: intellij idea
+categories: IntellijIdea
+tag: IntellijIdea
 ---
 
 * content
