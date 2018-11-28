@@ -24,6 +24,11 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
+          {% assign total = 0 %}
+          {% for post in site.posts %}
+          {% assign total = total | plus: post.minutes %}
+          {% endfor %}
+            <a>本站总博客数{{ total }}次</a>
             <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
         </li>
         <li class="dropdown">
