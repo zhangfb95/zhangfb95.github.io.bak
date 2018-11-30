@@ -20,3 +20,4 @@ permalink: /friend/
 | 拭心github | https://shixinzhang.top/ |
 | Java技术驿站 | http://cmsblogs.com/ |
 | hifreud | https://www.hifreud.com/ |
+| 超人汪小建 | blog.csdn.net/wangyangzhizhou |
