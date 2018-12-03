@@ -18,6 +18,7 @@ Java并发编程的艺术
 | ------------ | ------------ | ------------ |
 | [Java编程思想(第四版)](https://book.douban.com/subject/2130190/ "Java编程思想(第四版)") | Bruce Eckel  | 机械工业出版社 | 无 |
 |实战java高并发编程程序设计|葛一鸣 郭超|中国工信出版集团|无|
+|How Tomcat Works|Budi Kurniawan / Paul Deck |BrainySoftware|无|
 
 ## 想读
 
