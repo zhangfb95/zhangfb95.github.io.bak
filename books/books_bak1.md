@@ -1,3 +1,12 @@
+---
+layout: post
+title: 我的书单
+permalink: /books/
+---
+
+* content
+{:toc}
+
 ```
 需要免费获取下列1000本java/大数据/智能AI相关技术书籍的，
 烦请关注微信公众号【java进阶架构师】回复关键字免费获取下载链接！
