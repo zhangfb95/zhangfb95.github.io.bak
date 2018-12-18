@@ -21,3 +21,4 @@ permalink: /friend/
 | Java技术驿站 | http://cmsblogs.com/ |
 | hifreud | https://www.hifreud.com/ |
 | 超人汪小建 | blog.csdn.net/wangyangzhizhou |
+| v_JULY_v | https://blog.csdn.net/v_JULY_v |
