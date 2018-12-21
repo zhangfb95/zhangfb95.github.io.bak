@@ -62,6 +62,11 @@ permalink: /plan/
 
 ## 分布式
 
++ 高并发和高可用
++ session和分布式session
++ 分布式事务
++ 分布式单点登录
+
 ## spring全家桶
 
 ## 持久层，mybatis、JPA和Hibernate
