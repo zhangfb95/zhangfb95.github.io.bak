@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 精选博主
+title: 业界大佬
 permalink: /friend/
 ---
 
