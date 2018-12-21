@@ -75,3 +75,17 @@ permalink: /plan/
 ## 日志框架
 
 logback、slf4j、log4j等
+
+## 消息中间件
+
+kafka / rocketmq / rabbitmq /...
+
+## mongodb
+
+使用场景、语法、内部实现等
+
+## 任务调度
+
+quartz / 分布式任务调度器
+
+## gc 和 jvm
