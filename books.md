@@ -9,7 +9,9 @@ permalink: /books/
 
 ## 在读
 
-Java并发编程的艺术
+| 标题  | 作者 | 出版社 |
+| ------------ | ------------ |
+| [Java编程思想(第四版)](https://book.douban.com/subject/2130190) | Bruce Eckel  | 机械工业出版社 |
 
 
 ## 读过
