@@ -69,3 +69,9 @@ permalink: /plan/
 + 事务、explain、优化、存储引擎、乐观锁、悲观锁、复制算法和主从、切片、冷热库、索引结构
 
 ## redis
+
+## 常用类库源码阅读
+
+## 日志框架
+
+logback、slf4j、log4j等
