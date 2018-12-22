@@ -13,6 +13,28 @@ permalink: /plan/
 
 ## java基础
 
++ java的运行，命令包括：java、javac
++ 基本类型及其包装类型
++ Object的方法
++ String的基本用法，源码阅读
++ private、default、protected和public对类和方法的修饰
++ static关键字
++ 集合框架，Collection（List、Set和Queue）、Map、Collections
++ 异常体系，继承关系，运行时异常和非运行时异常、异常堆栈
++ IO（InputStream、OutputStream、Reader和Writer）
++ NIO（Channel、SelectedKey等）
++ 时区和时间（SimpleDateFormat、DateTimeFormatter、DateFormatter），Date和时区TimeZone
++ 泛型
++ 注解
++ Class、Type
++ 反射
++ JNI
+
+### 时区参考
+
++ https://www.hollischuang.com/archives/3017
++ https://www.hollischuang.com/archives/3082
+
 ## java并发
 
 ## 深入理解netty
@@ -28,16 +50,6 @@ permalink: /plan/
 + https://blog.csdn.net/davidsguo008/article/details/73556811
 + https://www.jianshu.com/p/1ccbc6a348db
 + http://blog.chinaunix.net/uid-22906954-id-4161625.html
-
-## 时区和时间
-
-+ SimpleDateFormat
-+ Date和时区TimeZone
-
-### 参考
-
-+ https://www.hollischuang.com/archives/3017
-+ https://www.hollischuang.com/archives/3082
 
 ## vcs: git
 
