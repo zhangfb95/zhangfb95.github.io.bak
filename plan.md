@@ -125,5 +125,11 @@ feign / eureka / hystrix / zuul
 
 ## DNS和域名解析、CDN
 
+## Linux操作系统
+
++ 常用命令
++ 文件系统、描述符和句柄
++ 内存、磁盘、cpu、网络、IO、时钟
+
 # 3. done
 
