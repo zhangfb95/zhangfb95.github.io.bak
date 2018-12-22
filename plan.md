@@ -7,9 +7,9 @@ permalink: /plan/
 * content
 {:toc}
 
-# doing
+# 1. doing
 
-# todo
+# 2. todo
 
 ## java基础
 
@@ -121,5 +121,5 @@ feign / eureka / hystrix / zuul
 
 ## DNS和域名解析、CDN
 
-# done
+# 3. done
 
