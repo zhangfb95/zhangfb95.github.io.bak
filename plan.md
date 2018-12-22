@@ -50,7 +50,7 @@ permalink: /plan/
 + 双向链表
 + 树、二叉树、二叉查找树、平衡二叉树、红黑树、B树、B+树、B*树
 + LRU
-+ 雪花算法
++ 雪花算法，升级版的[参考链接](https://juejin.im/entry/58e6f6d244d904006d379737)
 + 一致性hash算法
 + 权重负载均衡算法
 
@@ -107,6 +107,7 @@ quartz / 分布式任务调度器
 + jvm参数
 + class字节码
 + 类加载机制
++ jvm源码分析
 
 ## zookeeper
 
