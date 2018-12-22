@@ -128,6 +128,7 @@ feign / eureka / hystrix / zuul
 ## Linux操作系统
 
 + 常用命令
++ 常用系统性能监控工具，如：top、vmstat等
 + 文件系统、描述符和句柄
 + 内存、磁盘、cpu、网络、IO、时钟
 
