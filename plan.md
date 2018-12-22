@@ -103,7 +103,10 @@ quartz / 分布式任务调度器
 
 ## gc 和 jvm
 
-性能调优
++ 性能调优监控工具
++ jvm参数
++ class字节码
++ 类加载机制
 
 ## zookeeper
 
