@@ -47,4 +47,5 @@ permalink: /books/
 
 ## 参考
 
-[books_bak1](./books_bak1)
++ [books_bak1](./books_bak1)
++ [Java编程初级、中级、高级学习各需要什么书](https://www.jianshu.com/p/5d52775605d0)
