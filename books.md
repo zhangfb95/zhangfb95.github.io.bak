@@ -30,12 +30,12 @@ permalink: /books/
 | [Java8实战](https://book.douban.com/subject/26772632) | 陆明刚/劳佳 | 人民邮电出版社 |
 | [有效的单元测试](https://book.douban.com/subject/26364867) | Lasse Koskela | 机械工业出版社 |
 | [Java核心技术(卷2)：高级特性](https://book.douban.com/subject/25841326) | Cay S. Horstmann / Gary Cornell  | 机械工业出版社 |
-| [代码整洁之道](https://book.douban.com/subject/26919457) | 罗伯特·C.马丁 (Robert C.Martin) | 人民邮电出版社 |
+| [代码整洁之道](https://book.douban.com/subject/26919457) | Robert C.Martin | 人民邮电出版社 |
 | [数据结构与算法分析-Java语言描述](https://book.douban.com/subject/26745780) | 韦斯 (Mark Allen Weiss) | 机械工业出版社 |
 | [重构：改善既有代码的设计](https://book.douban.com/subject/4262627) | Martin Fowler | 人民邮电出版社 |
 | [Effective Java](https://book.douban.com/subject/3360807) | Joshua Bloch | 机械工业出版社 |
 | [Java并发编程实战](https://book.douban.com/subject/10484692) | Brian Goetz | 机械工业出版社 |
-| [算法](https://book.douban.com/subject/19952400) | 塞奇威克 (Robert Sedgewick) / 韦恩 (Kevin Wayne) | 人民邮电出版社 |
+| [算法](https://book.douban.com/subject/19952400) | Robert Sedgewick/Kevin Wayne | 人民邮电出版社 |
 | [Head First：设计模式](https://book.douban.com/subject/2243615) | 弗里曼 | 中国电力出版社 |
 | [深入理解Java虚拟机](https://book.douban.com/subject/24722612) | 周志明 | 机械工业出版社 |
 | [Java性能权威指南](https://book.douban.com/subject/26740520) | 奥克斯 (Scott Oaks) | 人民邮电出版社 |
@@ -43,7 +43,7 @@ permalink: /books/
 | [大型网站系统与Java中间件实践](https://book.douban.com/subject/25867042) | 曾宪杰 | 电子工业出版社 |
 | [大型网站技术架构：核心原理与案例分析](https://book.douban.com/subject/25723064) | 李智慧 | 电子工业出版社 |
 | [企业应用架构模式](https://book.douban.com/subject/4826290) | Martin Fowler | 机械工业出版社 |
-| [Expert One-on-One J2EE Development without EJB](https://book.douban.com/subject/1436131) | Rod Johnson/Juergen Hoeller | 电子工业出版社 |
+| [Expert One-on-One J2EE...](https://book.douban.com/subject/1436131) | Rod Johnson/Juergen Hoeller | 电子工业出版社 |
 
 ## 参考
 
