@@ -29,7 +29,7 @@ permalink: /books/
 | [Java程序员修炼之道](https://book.douban.com/subject/24841235) | Benjamin J. Evans | 人民邮电出版社 |
 | [Java8实战](https://book.douban.com/subject/26772632) | 陆明刚/劳佳 | 人民邮电出版社 |
 | [有效的单元测试](https://book.douban.com/subject/26364867) | Lasse Koskela | 机械工业出版社 |
-| [Java核心技术(卷2)：高级特性](https://book.douban.com/subject/25841326) | Cay S. Horstmann / Gary Cornell | 机械工业出版社 |
+| [Java核心技术(卷2)：高级特性](https://book.douban.com/subject/25841326) | Cay S. Horstmann/Gary Cornell | 机械工业出版社 |
 | [代码整洁之道](https://book.douban.com/subject/26919457) | Robert C.Martin | 人民邮电出版社 |
 | [数据结构与算法分析-Java语言描述](https://book.douban.com/subject/26745780) | 韦斯 (Mark Allen Weiss) | 机械工业出版社 |
 | [重构：改善既有代码的设计](https://book.douban.com/subject/4262627) | Martin Fowler | 人民邮电出版社 |
