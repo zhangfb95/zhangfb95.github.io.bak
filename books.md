@@ -46,6 +46,9 @@ permalink: /books/
 | [写给大忙人看的Java核心技术](https://book.douban.com/subject/26710388) | Cay S. Horstmann | 电子工业出版社 |
 | [图解TCP/IP](https://book.douban.com/subject/24737674) | 竹下隆史 | 人民邮电出版社 |
 | [图解HTTP](https://book.douban.com/subject/25863515) | 上野宣 | 人民邮电出版社 |
+| [TCP/IP详解 卷1：协议](https://book.douban.com/subject/1088054) | W·Richard Stevens | 机械工业出版社 |
+| [TCP/IP详解 卷2：实现](https://book.douban.com/subject/1087767) | W·Richard Stevens | 机械工业出版社 |
+| [TCP/IP详解 卷3：TCP事务协议、HTTP、NNTP和UNIX域协议](https://book.douban.com/subject/1058634) | W·Richard Stevens | 机械工业出版社 |
 
 ## 读过
 
