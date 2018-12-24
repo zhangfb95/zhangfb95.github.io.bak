@@ -40,6 +40,7 @@ permalink: /books/
 | [Spring揭秘](https://book.douban.com/subject/3897837) | 王福强 | 人民邮电出版社 |
 | [Spring源码深度解析](https://book.douban.com/subject/25866350) | 郝佳 | 人民邮电出版社 |
 | [Spring Cloud与Docker微服务架构实战](https://book.douban.com/subject/27028228) | 周立 | 电子工业出版社 |
+| [Paxos到Zookeeper：分布式一致性原理与实践](https://book.douban.com/subject/26292004) | 倪超 | 电子工业出版社 |
 
 ## 读过
 
