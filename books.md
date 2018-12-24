@@ -41,6 +41,9 @@ permalink: /books/
 | [Spring源码深度解析](https://book.douban.com/subject/25866350) | 郝佳 | 人民邮电出版社 |
 | [Spring Cloud与Docker微服务架构实战](https://book.douban.com/subject/27028228) | 周立 | 电子工业出版社 |
 | [从Paxos到Zookeeper：分布式一致性原理与实践](https://book.douban.com/subject/26292004) | 倪超 | 电子工业出版社 |
+| [实现领域驱动设计](https://book.douban.com/subject/25844633) | Vaughn Vernon | 电子工业出版社 |
+| [写给大忙人看的Java SE 8](https://book.douban.com/subject/26274206) | Cay S. Horstmann | 电子工业出版社 |
+| [写给大忙人看的Java核心技术](https://book.douban.com/subject/26710388) | Cay S. Horstmann | 电子工业出版社 |
 
 ## 读过
 
