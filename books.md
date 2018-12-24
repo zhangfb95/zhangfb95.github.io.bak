@@ -44,6 +44,8 @@ permalink: /books/
 | [实现领域驱动设计](https://book.douban.com/subject/25844633) | Vaughn Vernon | 电子工业出版社 |
 | [写给大忙人看的Java SE 8](https://book.douban.com/subject/26274206) | Cay S. Horstmann | 电子工业出版社 |
 | [写给大忙人看的Java核心技术](https://book.douban.com/subject/26710388) | Cay S. Horstmann | 电子工业出版社 |
+| [图解TCP/IP](https://book.douban.com/subject/24737674) | 竹下隆史 | 人民邮电出版社 |
+| [图解HTTP](https://book.douban.com/subject/25863515) | 上野宣 | 人民邮电出版社 |
 
 ## 读过
 
