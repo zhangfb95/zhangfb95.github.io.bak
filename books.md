@@ -14,15 +14,6 @@ permalink: /books/
 | [编写高质量代码：改善Java程序的151个建议](https://book.douban.com/subject/7059903) | 秦小波 | 机械工业出版社 |
 | [Spring实战](https://book.douban.com/subject/26767354) | Craig Walls | 人民邮电出版社 |
 
-## 读过
-
-| 标题  | 作者 | 出版社 | 心得  |
-| --- | --- | --- | --- |
-| [Java编程思想(第四版)](https://book.douban.com/subject/2130190) | Bruce Eckel  | 机械工业出版社 | 无 |
-| [实战java高并发编程程序设计](https://book.douban.com/subject/26663605) | 葛一鸣/郭超 | 中国工信出版集团 | 无 |
-| [How Tomcat Works](https://book.douban.com/subject/1943128) | Budi Kurniawan/Paul Deck | BrainySoftware |无 |
-| [Java并发编程的艺术](https://book.douban.com/subject/26591326) | 方腾飞/魏鹏/程晓明 | 机械工业出版社 | 无 |
-
 ## 想读
 
 | 标题  | 作者 | 出版社 |
@@ -45,6 +36,15 @@ permalink: /books/
 | [大型网站技术架构：核心原理与案例分析](https://book.douban.com/subject/25723064) | 李智慧 | 电子工业出版社 |
 | [企业应用架构模式](https://book.douban.com/subject/4826290) | Martin Fowler | 机械工业出版社 |
 | [Expert One-on-One J2EE...](https://book.douban.com/subject/1436131) | Rod Johnson/Juergen Hoeller | 电子工业出版社 |
+
+## 读过
+
+| 标题  | 作者 | 出版社 | 心得  |
+| --- | --- | --- | --- |
+| [Java编程思想(第四版)](https://book.douban.com/subject/2130190) | Bruce Eckel  | 机械工业出版社 | 无 |
+| [实战java高并发编程程序设计](https://book.douban.com/subject/26663605) | 葛一鸣/郭超 | 中国工信出版集团 | 无 |
+| [How Tomcat Works](https://book.douban.com/subject/1943128) | Budi Kurniawan/Paul Deck | BrainySoftware |无 |
+| [Java并发编程的艺术](https://book.douban.com/subject/26591326) | 方腾飞/魏鹏/程晓明 | 机械工业出版社 | 无 |
 
 ## 参考
 
