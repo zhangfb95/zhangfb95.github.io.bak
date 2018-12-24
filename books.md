@@ -36,6 +36,10 @@ permalink: /books/
 | [大型网站技术架构：核心原理与案例分析](https://book.douban.com/subject/25723064) | 李智慧 | 电子工业出版社 |
 | [企业应用架构模式](https://book.douban.com/subject/4826290) | Martin Fowler | 机械工业出版社 |
 | [Expert One-on-One J2EE...](https://book.douban.com/subject/1436131) | Rod Johnson/Juergen Hoeller | 电子工业出版社 |
+| [Spring技术内幕](https://book.douban.com/subject/10470970) | 计文柯 | 机械工业出版社 |
+| [Spring揭秘](https://book.douban.com/subject/3897837) | 王福强 | 人民邮电出版社 |
+| [Spring源码深度解析](https://book.douban.com/subject/25866350) | 郝佳 | 人民邮电出版社 |
+| [Spring Cloud与Docker微服务架构实战](https://book.douban.com/subject/27028228) | 周立 | 电子工业出版社 |
 
 ## 读过
 
