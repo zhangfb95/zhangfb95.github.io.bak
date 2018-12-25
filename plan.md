@@ -129,6 +129,7 @@ quartz / 分布式任务调度器
 ## netflix oss
 
 + feign
++ ribbon
 + eureka
 + hystrix
 + zuul
@@ -139,7 +140,7 @@ quartz / 分布式任务调度器
 
 ## servlet和web容器
 
-## 网络安全和攻击
+## 网络攻击和网络安全
 
 ## DNS和域名解析、CDN
 
