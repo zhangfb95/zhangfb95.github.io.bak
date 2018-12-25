@@ -50,6 +50,8 @@ permalink: /books/
 | [TCP/IP详解 卷1：协议](https://book.douban.com/subject/1088054) | W·Richard Stevens | 机械工业出版社 |
 | [TCP/IP详解 卷2：实现](https://book.douban.com/subject/1087767) | W·Richard Stevens | 机械工业出版社 |
 | [TCP/IP详解 卷3：TCP事务协议、HTTP、NNTP和UNIX域协议](https://book.douban.com/subject/1058634) | W·Richard Stevens | 机械工业出版社 |
+| [浪潮之巅](https://book.douban.com/subject/26792439) | 吴军 | 人民邮电出版社 |
+| [硅谷之谜](https://book.douban.com/subject/26665230) | 吴军 | 人民邮电出版社 |
 
 ## 读过
 
