@@ -35,7 +35,41 @@ permalink: /plan/
 + https://www.hollischuang.com/archives/3017
 + https://www.hollischuang.com/archives/3082
 
-## java并发
+## java并发编程
+
++ wait / notify
++ Thread过期方法和常用方法 — stop / suspend / resume(过期); interrupt / isInterrupted / static interrupted / join / yield / sleep / holdsLock / setContextClassLoader
++ 锁 — synchronized / ReentrantLock / ReadWriteLock
++ 内存模型
++ volatile
++ Happen-Before原则
++ 线程协作类 — Semaphore / CountDownLatch / CyclicBarrier / Exchanger
++ 线程协作工具 — LockSupport
++ Java线程池 — Executors工厂类 / 线程池对象的参数及工作机制 / 源码剖析
++ CAS原理
++ 锁优化 — 偏向锁 / 轻量级锁 / 重量级锁 / 锁消除 / 锁粗化 / 锁分离 / 如何自己优化锁
++ 管道流 — PipedWriter / PipedReader / PipedInputStream / PipedOutputStream
++ Fork-Join框架
++ 死锁 — 什么是死锁 / 如何检测 / 形成原因及如何解决
++ AQS — CLH锁
++ 线程中断
++ 源码阅读：ConcurrentHashMap — 各个方法 / 如何扩容
++ 源码阅读：LinkedBlockingQueue
++ 源码阅读：CopyOnWriteArrayList
++ 源码阅读：ThreadLocal
++ 源码阅读：AbstractQueuedSynchronizer — 抽象队列同步器，也叫AQS
++ 源码阅读：ConcurrentLinkedQueue
++ 源码阅读：SynchronousQueue
++ 源码阅读：CountDown
++ 源码阅读：CyclicBarrier
++ 源码阅读：Semaphore
++ 源码阅读：Exchanger
++ 源码阅读：ReentrantLock, 公平锁和非公平锁
++ 源码阅读：ReentrantReadWriteLock
++ 源码阅读：Timer
++ 源码阅读：FutureTask
++ 源码阅读：SheduledThreadPoolExecutor
++ 源码阅读：LinkedTransferQueue
 
 ## 深入理解netty
 
