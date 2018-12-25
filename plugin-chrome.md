@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chrome浏览器插件
-permalink: /plugin-intellij/
+permalink: /plugin-chrome/
 ---
 
 * content

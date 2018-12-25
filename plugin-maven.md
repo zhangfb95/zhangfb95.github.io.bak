@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maven插件
-permalink: /plugin-intellij/
+permalink: /plugin-maven/
 ---
 
 * content
