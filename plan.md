@@ -126,9 +126,12 @@ quartz / 分布式任务调度器
 
 ## zookeeper
 
-## netflix oss
+## netflix oss(Netflix Open Source Software)
 
-feign / eureka / hystrix / zuul
++ feign
++ eureka
++ hystrix
++ zuul
 
 ## spring cloud
 
