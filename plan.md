@@ -37,9 +37,6 @@ permalink: /plan/
 
 ## java并发编程
 
-+ wait / notify
-+ Thread过期方法和常用方法 — stop / suspend / resume(过期); interrupt / isInterrupted / static interrupted / join / yield / sleep / holdsLock / setContextClassLoader
-+ 锁 — synchronized / ReentrantLock / ReadWriteLock
 + 内存模型
 + volatile
 + Happen-Before原则
@@ -187,3 +184,8 @@ quartz / 分布式任务调度器
 
 # 3. done
 
+## java并发编程
+
++ wait / notify
++ Thread过期方法和常用方法 — stop / suspend / resume(过期); interrupt / isInterrupted / static interrupted / join / yield / sleep / holdsLock / setContextClassLoader
++ 锁 — synchronized / ReentrantLock / ReadWriteLock
