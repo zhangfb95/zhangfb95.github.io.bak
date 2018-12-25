@@ -126,7 +126,7 @@ quartz / 分布式任务调度器
 
 ## zookeeper
 
-## netflix oss(Netflix Open Source Software)
+## netflix oss
 
 + feign
 + eureka
