@@ -126,6 +126,7 @@ permalink: /plan/
 + dml
 + ddl
 + 事务、explain、优化、存储引擎、乐观锁、悲观锁、复制算法和主从、切片、冷热库、索引结构
++ 函数索引，like、大于、小于、between in、等索引情况
 
 ## redis
 
