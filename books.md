@@ -16,7 +16,7 @@ permalink: /books/
 ## 想读
 
 | 标题 | 作者 | 出版社 |
-| ------------ | ------------ |
+| --- | --- | --- |
 | [Java程序员修炼之道](https://book.douban.com/subject/24841235) | Benjamin J. Evans | 人民邮电出版社 |
 | [Java8实战](https://book.douban.com/subject/26772632) | 陆明刚/劳佳 | 人民邮电出版社 |
 | [有效的单元测试](https://book.douban.com/subject/26364867) | Lasse Koskela | 机械工业出版社 |
@@ -56,7 +56,7 @@ permalink: /books/
 
 | 标题 | 作者 | 出版社 | 心得 |
 | --- | --- | --- | --- |
-| [编写高质量代码：改善Java程序的151个建议](https://book.douban.com/subject/7059903) | 秦小波 | 机械工业出版社 |
+| [编写高质量代码：改善Java程序的151个建议](https://book.douban.com/subject/7059903) | 秦小波 | 机械工业出版社 | 无 |
 | [Java编程思想(第四版)](https://book.douban.com/subject/2130190) | Bruce Eckel  | 机械工业出版社 | 无 |
 | [实战java高并发编程程序设计](https://book.douban.com/subject/26663605) | 葛一鸣/郭超 | 中国工信出版集团 | 无 |
 | [How Tomcat Works](https://book.douban.com/subject/1943128) | Budi Kurniawan/Paul Deck | BrainySoftware |无 |
