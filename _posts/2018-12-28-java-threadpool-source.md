@@ -516,7 +516,7 @@ private void interruptIdleWorkers(boolean onlyOne) {
 1. `onlyOne`用于控制是否只循环一次，在`shutdown()`里面，该值为false，因此是遍历整个worker列表
 2. 对每个worker，会尝试去获取worker锁。如果获取到了，那么说明该worker是空闲的，可以进行中断操作
 
-## 强迫型退出 - shutdownNow()
+### 强迫型退出 - shutdownNow()
 
 ```java
 public List<Runnable> shutdownNow() {
