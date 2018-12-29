@@ -13,6 +13,10 @@ permalink: /plan/
 
 + CAS原理
 
+## gc 和 jvm
+
++ 性能调优监控工具 
+
 # 2. todo
 
 ## java基础
