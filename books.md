@@ -51,6 +51,7 @@ permalink: /books/
 | [TCP/IP详解 卷3：TCP事务协议、HTTP、NNTP和UNIX域协议](https://book.douban.com/subject/1058634) | W·Richard Stevens | 机械工业出版社 |
 | [浪潮之巅](https://book.douban.com/subject/26792439) | 吴军 | 人民邮电出版社 |
 | [硅谷之谜](https://book.douban.com/subject/26665230) | 吴军 | 人民邮电出版社 |
+| [凤凰项目—一个IT运维的传奇故事](https://book.douban.com/subject/26644070) | Gene Kim | 人民邮电出版社 |
 
 ## 读过
 
