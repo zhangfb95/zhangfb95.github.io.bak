@@ -323,6 +323,7 @@ private final class Worker
     Worker(Runnable firstTask) {
         setState(-1); // inhibit interrupts until runWorker
         this.firstTask = firstTask;
+        // 这儿是Worker的关键所在，使用了线程工厂创建了一个线程。传入的参数为当前worker
         this.thread = getThreadFactory().newThread(this);
     }
 
