@@ -11,7 +11,7 @@ permalink: /plan/
 
 ## java并发编程
 
-+ Java线程池 — Executors工厂类 / 线程池对象的参数及工作机制 / 源码剖析
++ CAS原理
 
 # 2. todo
 
@@ -46,7 +46,6 @@ permalink: /plan/
 + Happen-Before原则
 + 线程协作类 — Semaphore / CountDownLatch / CyclicBarrier / Exchanger
 + 线程协作工具 — LockSupport
-+ CAS原理
 + 锁优化 — 偏向锁 / 轻量级锁 / 重量级锁 / 锁消除 / 锁粗化 / 锁分离 / 如何自己优化锁
 + 管道流 — PipedWriter / PipedReader / PipedInputStream / PipedOutputStream
 + Fork-Join框架
@@ -193,3 +192,4 @@ quartz / 分布式任务调度器
 + wait / notify
 + Thread过期方法和常用方法 — stop / suspend / resume(过期); interrupt / isInterrupted / static interrupted / join / yield / sleep / holdsLock / setContextClassLoader
 + 锁 — synchronized / ReentrantLock / ReadWriteLock
++ Java线程池 — Executors工厂类 / 线程池对象的参数及工作机制 / 源码剖析
