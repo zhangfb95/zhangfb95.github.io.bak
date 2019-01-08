@@ -67,5 +67,6 @@ permalink: /plugin-intellij/
 | ctrl + alt + shift + N | 查找任意资源 |
 | ctrl + G | 跳至指定行 |
 | ctrl + W | 以块的方式逐渐增加选择 |
+| alt + home | 跳至导航栏 |
 
 > 1. left，光标左键
