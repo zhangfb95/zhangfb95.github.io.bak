@@ -28,5 +28,10 @@ permalink: /plugin-intellij/
 | ctrl + alt + B | 跳至方法实现的地方 |
 | ctrl + alt + left | 向后推进光标的位置 |
 | ctrl + alt + right | 向前推进光标的位置 |
+| ctrl + alt + v | 提取局部变量 |
+| ctrl + alt + f | 提取成员变量 |
+| ctrl + alt + m | 提取方法 |
+| home | 光标跳至行首 |
+| end | 光标跳至行尾 |
 
 > 1. left，光标左键
