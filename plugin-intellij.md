@@ -26,5 +26,7 @@ permalink: /plugin-intellij/
 | ctrl + Y | 删除当前行 |
 | ctrl + B | 跳至方法声明的地方 |
 | ctrl + alt + B | 跳至方法实现的地方 |
+| ctrl + alt + left | 向后推进光标的位置 |
+| ctrl + alt + right | 向前推进光标的位置 |
 
 > 1. left，光标左键
