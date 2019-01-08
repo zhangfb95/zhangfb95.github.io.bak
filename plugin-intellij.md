@@ -96,4 +96,11 @@ permalink: /plugin-intellij/
 | F5 | 拷贝 |
 | alt + delete | 安全删除 |
 
-> 1. left，光标左键
+### 快捷键说明
+
++ left，光标左键
++ right，光标右键
++ up，光标上键
++ down，光标下键
++ delete，删除键
++ tab，跳格键
