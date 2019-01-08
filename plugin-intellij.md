@@ -16,9 +16,13 @@ permalink: /plugin-intellij/
 
 ## 常用快捷键
 
-| name | windows shortcut | description |
-| --- | --- | --- |
-| ctrl + shift + cursor | Move Caret to Next Word with Selection | 选择多个字符 |
-| ctrl + cursor | Left with Selection | 选择单个字符 |
+| windows shortcut | description |
+| --- | --- |
+| ctrl + shift + left | 光标向左选择一个单词 |
+| left | 光标左移一个字符 |
+| ctrl + left | 光标左移一个单词 |
+| shift + left | 光标向左选择一个字符 |
+| ctrl + D | 复制病粘贴当前行 |
+| ctrl + Y | 删除当前行 |
 
-> 1. cursor，指的是光标 
+> 1. left，光标左键
