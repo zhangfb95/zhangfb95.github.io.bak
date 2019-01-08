@@ -20,8 +20,11 @@ permalink: /plugin-intellij/
 | --- | --- |
 | ctrl + Z | 撤销操作 |
 | ctrl + shift + left | 光标向左选择一个单词 |
-| ctrl + shift + up | 光标所在行上移 |
-| ctrl + shift + down | 光标所在行下移 |
+| ctrl + shift + right | 光标向右选择一个单词 |
+| ctrl + shift + up | 表达式上移 |
+| ctrl + shift + down | 表达式下移 |
+| ctrl + alt + up | 光标所在行上移 |
+| ctrl + alt + down | 光标所在行下移 |
 | left | 光标左移一个字符 |
 | ctrl + left | 光标左移一个单词 |
 | shift + left | 光标向左选择一个字符 |
@@ -74,6 +77,7 @@ permalink: /plugin-intellij/
 | alt + up | 上一个方法 |
 | alt + down | 下一个方法 |
 | ctrl + O | 覆盖方法（在子类使用） |
+| ctrl + alt + O | 去掉无用的import |
 | ctrl + alt + shift + L | 格式化代码（弹框） |
 | ctrl + alt + L | 格式化代码（不弹框） |
 | ctrl + alt + T | 使用表达式环绕（如try、if、while等） |
