@@ -68,5 +68,10 @@ permalink: /plugin-intellij/
 | ctrl + G | 跳至指定行 |
 | ctrl + W | 以块的方式逐渐增加选择 |
 | alt + home | 跳至导航栏 |
+| ctrl + U | 跳至父方法或父类 |
+| ctrl + F12 | 显示当前文件的结构 |
+| ctrl + alt + F12 | 显示文件路径 |
+| alt + up | 上一个方法 |
+| alt + down | 下一个方法 |
 
 > 1. left，光标左键
