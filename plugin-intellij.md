@@ -38,5 +38,6 @@ permalink: /plugin-intellij/
 | ctrl + k | 提交vcs |
 | ctrl + shift + k | 推送vcs |
 | ctrl + alt + k | 提交并推送vcs |
+| ctrl + shift + f10 | 运行当前方法或类 |
 
 > 1. left，光标左键
