@@ -73,5 +73,7 @@ permalink: /plugin-intellij/
 | ctrl + alt + F12 | 显示文件路径 |
 | alt + up | 上一个方法 |
 | alt + down | 下一个方法 |
+| ctrl + O | 覆盖方法（在子类使用） |
+| ctrl + alt + T | 使用表达式环绕（如try、if、while等） |
 
 > 1. left，光标左键
