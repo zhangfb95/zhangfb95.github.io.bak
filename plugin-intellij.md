@@ -53,6 +53,8 @@ permalink: /plugin-intellij/
 | ctrl + alt + shift + S | 打开当前项目设置窗口 |
 | delete | 向后删除字符或者删除选中字符 |
 | ctrl + F | 在当前文档中查找 |
-| ctrl + R | 在当前温度中替换 |
+| ctrl + R | 在当前文档中替换 |
+| ctrl + shift + F | 所有位置查找 |
+| ctrl + shift + R | 所有位置替换 |
 
 > 1. left，光标左键
