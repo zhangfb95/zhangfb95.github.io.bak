@@ -56,5 +56,8 @@ permalink: /plugin-intellij/
 | ctrl + R | 在当前文档中替换 |
 | ctrl + shift + F | 所有位置查找 |
 | ctrl + shift + R | 所有位置替换 |
+| alt + F7 | 查找使用的地方 |
+| ctrl + H | 查找类继承关系 |
+| ctrl + shift + H | 查找方法引用关系 |
 
 > 1. left，光标左键
