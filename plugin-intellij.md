@@ -62,5 +62,10 @@ permalink: /plugin-intellij/
 | ctrl + shift + J | 将下一行合并到当前行 |
 | tab | 添加跳格 |
 | shift + tab | 移除跳格 |
+| ctrl + N | 查找类 |
+| ctrl + shift + N | 查找文件 |
+| ctrl + alt + shift + N | 查找任意资源 |
+| ctrl + G | 跳至指定行 |
+| ctrl + W | 以块的方式逐渐增加选择 |
 
 > 1. left，光标左键
