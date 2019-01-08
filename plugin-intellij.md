@@ -42,6 +42,8 @@ permalink: /plugin-intellij/
 | ctrl + alt + left | 向后推进光标的位置 |
 | ctrl + alt + right | 向前推进光标的位置 |
 | ctrl + alt + V | 提取局部变量 |
+| ctrl + alt + C | 提取常量 |
+| ctrl + alt + P | 提取方法变量 |
 | ctrl + alt + F | 提取成员变量 |
 | ctrl + alt + M | 提取方法 |
 | home | 光标跳至行首 |
@@ -51,6 +53,8 @@ permalink: /plugin-intellij/
 | ctrl + K | 提交vcs |
 | ctrl + shift + K | 推送vcs |
 | ctrl + alt + K | 提交并推送vcs |
+| ctrl + F9 | 构建整个项目 |
+| ctrl + shift + F9 | 重新构建当前文件 |
 | ctrl + shift + F10 | 运行当前方法或类 |
 | ctrl + alt + S | 打开IDE设置窗口 |
 | ctrl + alt + shift + S | 打开当前项目设置窗口 |
@@ -86,5 +90,10 @@ permalink: /plugin-intellij/
 | ctrl + alt + J | 将选中内容包装在模板中 |
 | ctrl + / | 行注释 |
 | ctrl + shift + / | 块注释 |
+| ctrl + alt + shift + T | 重构 |
+| shift + F6 | 重命名 |
+| F6 | 移动 |
+| F5 | 拷贝 |
+| alt + delete | 安全删除 |
 
 > 1. left，光标左键
