@@ -51,5 +51,6 @@ permalink: /plugin-intellij/
 | ctrl + shift + F10 | 运行当前方法或类 |
 | ctrl + alt + S | 打开IDE设置窗口 |
 | ctrl + alt + shift + S | 打开当前项目设置窗口 |
+| delete | 向后删除字符或者删除选中字符 |
 
 > 1. left，光标左键
