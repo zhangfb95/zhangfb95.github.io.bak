@@ -18,6 +18,7 @@ permalink: /plugin-intellij/
 
 | windows shortcut | description |
 | --- | --- |
+| ctrl + Z | 撤销操作 |
 | ctrl + shift + left | 光标向左选择一个单词 |
 | left | 光标左移一个字符 |
 | ctrl + left | 光标左移一个单词 |
