@@ -22,7 +22,9 @@ permalink: /plugin-intellij/
 | left | 光标左移一个字符 |
 | ctrl + left | 光标左移一个单词 |
 | shift + left | 光标向左选择一个字符 |
-| ctrl + D | 复制病粘贴当前行 |
+| ctrl + D | 复制并粘贴当前行 |
 | ctrl + Y | 删除当前行 |
+| ctrl + B | 跳至方法声明的地方 |
+| ctrl + alt + B | 跳至方法实现的地方 |
 
 > 1. left，光标左键
