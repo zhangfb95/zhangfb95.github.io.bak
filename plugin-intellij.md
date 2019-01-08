@@ -59,5 +59,8 @@ permalink: /plugin-intellij/
 | alt + F7 | 查找使用的地方 |
 | ctrl + H | 查找类继承关系 |
 | ctrl + shift + H | 查找方法引用关系 |
+| ctrl + shift + J | 将下一行合并到当前行 |
+| tab | 添加跳格 |
+| shift + tab | 移除跳格 |
 
 > 1. left，光标左键
