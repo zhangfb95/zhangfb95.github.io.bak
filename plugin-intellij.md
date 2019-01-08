@@ -74,8 +74,13 @@ permalink: /plugin-intellij/
 | alt + up | 上一个方法 |
 | alt + down | 下一个方法 |
 | ctrl + O | 覆盖方法（在子类使用） |
-| ctrl + alt + shift + L | 格式化代码 |
+| ctrl + alt + shift + L | 格式化代码（弹框） |
+| ctrl + alt + L | 格式化代码（不弹框） |
 | ctrl + alt + T | 使用表达式环绕（如try、if、while等） |
 | ctrl + shift + delete | 删除表达式环绕 |
+| ctrl + J | 插入模板 |
+| ctrl + alt + J | 将选中内容包装在模板中 |
+| ctrl + / | 行注释 |
+| ctrl + shift + / | 块注释 |
 
 > 1. left，光标左键
