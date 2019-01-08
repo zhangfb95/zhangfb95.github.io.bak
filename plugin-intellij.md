@@ -26,22 +26,24 @@ permalink: /plugin-intellij/
 | ctrl + Y | 删除当前行 |
 | ctrl + C | 复制选中字符 |
 | ctrl + Y | 剪切选中字符 |
+| ctrl + shift + U | 选中字符大小写转换 |
+| ctrl + shift + C | 复制当前文件路径 |
 | ctrl + B | 跳至方法声明的地方 |
 | ctrl + alt + B | 跳至方法实现的地方 |
 | ctrl + alt + left | 向后推进光标的位置 |
 | ctrl + alt + right | 向前推进光标的位置 |
-| ctrl + alt + v | 提取局部变量 |
-| ctrl + alt + f | 提取成员变量 |
-| ctrl + alt + m | 提取方法 |
+| ctrl + alt + V | 提取局部变量 |
+| ctrl + alt + F | 提取成员变量 |
+| ctrl + alt + M | 提取方法 |
 | home | 光标跳至行首 |
 | end | 光标跳至行尾 |
 | ctrl + home | 光标跳至文件头 |
 | end | 光标跳至文件尾 |
-| ctrl + k | 提交vcs |
-| ctrl + shift + k | 推送vcs |
-| ctrl + alt + k | 提交并推送vcs |
-| ctrl + shift + f10 | 运行当前方法或类 |
-| ctrl + alt + s | 打开IDE设置窗口 |
-| ctrl + alt + shift + s | 打开当前项目设置窗口 |
+| ctrl + K | 提交vcs |
+| ctrl + shift + K | 推送vcs |
+| ctrl + alt + K | 提交并推送vcs |
+| ctrl + shift + F10 | 运行当前方法或类 |
+| ctrl + alt + S | 打开IDE设置窗口 |
+| ctrl + alt + shift + S | 打开当前项目设置窗口 |
 
 > 1. left，光标左键
