@@ -24,6 +24,8 @@ permalink: /plugin-intellij/
 | shift + left | 光标向左选择一个字符 |
 | ctrl + D | 复制并粘贴当前行 |
 | ctrl + Y | 删除当前行 |
+| ctrl + C | 复制选中字符 |
+| ctrl + Y | 剪切选中字符 |
 | ctrl + B | 跳至方法声明的地方 |
 | ctrl + alt + B | 跳至方法实现的地方 |
 | ctrl + alt + left | 向后推进光标的位置 |
@@ -39,5 +41,7 @@ permalink: /plugin-intellij/
 | ctrl + shift + k | 推送vcs |
 | ctrl + alt + k | 提交并推送vcs |
 | ctrl + shift + f10 | 运行当前方法或类 |
+| ctrl + alt + s | 打开IDE设置窗口 |
+| ctrl + alt + shift + s | 打开当前项目设置窗口 |
 
 > 1. left，光标左键
