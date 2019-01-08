@@ -29,7 +29,9 @@ permalink: /plugin-intellij/
 | ctrl + Y | 删除当前行 |
 | ctrl + C | 复制选中字符 |
 | ctrl + Y | 剪切选中字符 |
+| ctrl + V | 粘贴复制的字符 |
 | ctrl + alt + shift + C | 复制当前元素的引用 |
+| ctrl + alt + shift + V | 粘贴复制的引用 |
 | ctrl + shift + U | 选中字符大小写转换 |
 | ctrl + shift + C | 复制当前文件路径 |
 | ctrl + B | 跳至方法声明的地方 |
