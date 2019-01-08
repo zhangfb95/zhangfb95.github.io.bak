@@ -33,5 +33,9 @@ permalink: /plugin-intellij/
 | ctrl + alt + m | 提取方法 |
 | home | 光标跳至行首 |
 | end | 光标跳至行尾 |
+| ctrl + home | 光标跳至文件头 |
+| end | 光标跳至文件尾 |
+| ctrl + k | 提交vcs |
+| ctrl + shift + k | 推送vcs |
 
 > 1. left，光标左键
