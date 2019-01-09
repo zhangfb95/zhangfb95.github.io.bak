@@ -95,6 +95,11 @@ permalink: /plugin-intellij/
 | F6 | 移动 |
 | F5 | 拷贝 |
 | alt + delete | 安全删除 |
+
+### Run相关
+
+| windows shortcut | description |
+| --- | --- |
 | F7 | 单步进入（会进入自定义方法，不会进入jdk代码） |
 | alt + shift + F7 | 强制单步进入（会进入自定义方法，也会进入jdk代码） |
 | F8 | 单步进入（不会进入自定义方法和jdk代码） |
@@ -104,6 +109,8 @@ permalink: /plugin-intellij/
 | alt + F8 | 弹出表达式窗口 |
 | shift + F8 | 跳至下一断点位置 |
 | ctrl + F2 | 停止当前进程 |
+| alt + shift + F9 | debug执行 |
+| alt + shift + F10 | 非debug执行 |
 
 ### 快捷键说明
 
