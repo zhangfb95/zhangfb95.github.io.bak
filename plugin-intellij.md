@@ -43,8 +43,6 @@ permalink: /plugin-intellij/
 | ctrl + F9 | 构建整个项目 |
 | ctrl + shift + F9 | 重新构建当前文件 |
 | ctrl + shift + F10 | 运行当前方法或类 |
-| ctrl + alt + S | 打开IDE设置窗口 |
-| ctrl + alt + shift + S | 打开当前项目设置窗口 |
 | ctrl + F | 在当前文档中查找 |
 | ctrl + R | 在当前文档中替换 |
 | ctrl + shift + F | 所有位置查找 |
@@ -70,7 +68,12 @@ permalink: /plugin-intellij/
 | F5 | 拷贝 |
 | alt + delete | 安全删除 |
 
-## Edit相关
+### File相关
+
+| ctrl + alt + S | 打开IDE设置窗口 |
+| ctrl + alt + shift + S | 打开当前项目设置窗口 |
+
+### Edit相关
 
 | windows shortcut | description |
 | --- | --- |
