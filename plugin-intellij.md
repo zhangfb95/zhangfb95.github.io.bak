@@ -21,8 +21,6 @@ permalink: /plugin-intellij/
 | ctrl + Z | 撤销操作 |
 | ctrl + shift + left | 光标向左选择一个单词 |
 | ctrl + shift + right | 光标向右选择一个单词 |
-| ctrl + alt + up | 光标所在行上移 |
-| ctrl + alt + down | 光标所在行下移 |
 | left | 光标左移一个字符 |
 | ctrl + left | 光标左移一个单词 |
 | shift + left | 光标向左选择一个字符 |
@@ -76,8 +74,8 @@ permalink: /plugin-intellij/
 | ctrl + U | 跳至父方法或父类 |
 | ctrl + F12 | 显示当前文件的结构 |
 | ctrl + alt + F12 | 显示文件路径 |
-| alt + up | 上一个方法 |
-| alt + down | 下一个方法 |
+| alt + up | 移动光标到上一个方法 |
+| alt + down | 移动光标到下一个方法 |
 | ctrl + alt + shift + T | 重构 |
 | shift + F6 | 重命名 |
 | F6 | 移动 |
@@ -100,6 +98,8 @@ permalink: /plugin-intellij/
 | ctrl + alt + L | 格式化代码（不弹框） |
 | ctrl + shift + up | 表达式上移 |
 | ctrl + shift + down | 表达式下移 |
+| alt + shift + up | 光标所在行上移 |
+| alt + shift + down | 光标所在行下移 |
 | Alt + insert | 弹出生成菜单（【注】：在hp笔记本中，fn+e表示insert键） |
 
 ### Run相关
