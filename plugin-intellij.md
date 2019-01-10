@@ -18,21 +18,12 @@ permalink: /plugin-intellij/
 
 | windows shortcut | description |
 | --- | --- |
-| ctrl + Z | 撤销操作 |
 | ctrl + shift + left | 光标向左选择一个单词 |
 | ctrl + shift + right | 光标向右选择一个单词 |
 | left | 光标左移一个字符 |
 | ctrl + left | 光标左移一个单词 |
 | shift + left | 光标向左选择一个字符 |
-| ctrl + D | 复制并粘贴当前行 |
-| ctrl + Y | 删除当前行 |
-| ctrl + C | 复制选中字符 |
-| ctrl + Y | 剪切选中字符 |
-| ctrl + V | 粘贴复制的字符 |
-| ctrl + alt + shift + C | 复制当前元素的引用 |
-| ctrl + alt + shift + V | 粘贴复制的引用 |
 | ctrl + shift + U | 选中字符大小写转换 |
-| ctrl + shift + C | 复制当前文件路径 |
 | ctrl + B | 跳至方法声明的地方 |
 | ctrl + alt + B | 跳至方法实现的地方 |
 | ctrl + alt + left | 向后推进光标的位置 |
@@ -54,7 +45,6 @@ permalink: /plugin-intellij/
 | ctrl + shift + F10 | 运行当前方法或类 |
 | ctrl + alt + S | 打开IDE设置窗口 |
 | ctrl + alt + shift + S | 打开当前项目设置窗口 |
-| delete | 向后删除字符或者删除选中字符 |
 | ctrl + F | 在当前文档中查找 |
 | ctrl + R | 在当前文档中替换 |
 | ctrl + shift + F | 所有位置查找 |
@@ -62,14 +52,12 @@ permalink: /plugin-intellij/
 | alt + F7 | 查找使用的地方 |
 | ctrl + H | 查找类继承关系 |
 | ctrl + shift + H | 查找方法引用关系 |
-| ctrl + shift + J | 将下一行合并到当前行 |
 | tab | 添加跳格 |
 | shift + tab | 移除跳格 |
 | ctrl + N | 查找类 |
 | ctrl + shift + N | 查找文件 |
 | ctrl + alt + shift + N | 查找任意资源 |
 | ctrl + G | 跳至指定行 |
-| ctrl + W | 以块的方式逐渐增加选择 |
 | alt + home | 跳至导航栏 |
 | ctrl + U | 跳至父方法或父类 |
 | ctrl + F12 | 显示当前文件的结构 |
@@ -81,6 +69,26 @@ permalink: /plugin-intellij/
 | F6 | 移动 |
 | F5 | 拷贝 |
 | alt + delete | 安全删除 |
+
+## Edit相关
+
+| windows shortcut | description |
+| --- | --- |
+| ctrl + Z | 撤销操作 |
+| ctrl + shift + Z | 取消撤销操作 |
+| ctrl + X | 剪切选中字符 |
+| ctrl + C | 复制选中字符 |
+| ctrl + V | 粘贴复制的字符 |
+| ctrl + shift + C | 复制当前文件路径 |
+| ctrl + shift + V | 从历史中选择字符进行粘贴 |
+| ctrl + alt + shift + C | 复制当前元素的引用 |
+| ctrl + alt + shift + V | 粘贴复制的引用 |
+| delete | 向后删除字符或者删除选中字符 |
+| ctrl + A | 全选 |
+| ctrl + W | 以块的方式逐渐增加选择 |
+| ctrl + shift + J | 将下一行合并到当前行 |
+| ctrl + D | 复制并粘贴当前行 |
+| ctrl + Y | 删除当前行 |
 
 ### Code相关
 
