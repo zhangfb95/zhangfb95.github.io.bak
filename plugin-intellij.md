@@ -18,31 +18,18 @@ permalink: /plugin-intellij/
 
 | windows shortcut | description |
 | --- | --- |
-| ctrl + shift + left | 光标向左选择一个单词 |
-| ctrl + shift + right | 光标向右选择一个单词 |
-| left | 光标左移一个字符 |
-| ctrl + left | 光标左移一个单词 |
-| shift + left | 光标向左选择一个字符 |
 | ctrl + shift + U | 选中字符大小写转换 |
 | ctrl + alt + V | 提取局部变量 |
 | ctrl + alt + C | 提取常量 |
 | ctrl + alt + P | 提取方法变量 |
 | ctrl + alt + F | 提取成员变量 |
 | ctrl + alt + M | 提取方法 |
-| home | 光标跳至行首 |
-| end | 光标跳至行尾 |
-| ctrl + home | 光标跳至文件头 |
-| end | 光标跳至文件尾 |
 | ctrl + K | 提交vcs |
 | ctrl + shift + K | 推送vcs |
 | ctrl + alt + K | 提交并推送vcs |
 | ctrl + F9 | 构建整个项目 |
 | ctrl + shift + F9 | 重新构建当前文件 |
 | ctrl + shift + F10 | 运行当前方法或类 |
-| ctrl + F | 在当前文档中查找 |
-| ctrl + R | 在当前文档中替换 |
-| ctrl + shift + F | 所有位置查找 |
-| ctrl + shift + R | 所有位置替换 |
 | alt + F7 | 查找使用的地方 |
 | ctrl + H | 查找类继承关系 |
 | ctrl + shift + H | 查找方法引用关系 |
@@ -80,6 +67,10 @@ permalink: /plugin-intellij/
 | ctrl + shift + J | 将下一行合并到当前行 |
 | ctrl + D | 复制并粘贴当前行 |
 | ctrl + Y | 删除当前行 |
+| ctrl + F | 在当前文档中查找 |
+| ctrl + R | 在当前文档中替换 |
+| ctrl + shift + F | 所有位置查找 |
+| ctrl + shift + R | 所有位置替换 |
 
 ### View相关
 
@@ -113,6 +104,16 @@ permalink: /plugin-intellij/
 | ctrl + alt + shift + down | 当前文档的下一修改点 |
 | alt + up | 移动光标到上一个方法 |
 | alt + down | 移动光标到下一个方法 |
+| ctrl + shift + left | 光标向左选择一个单词 |
+| ctrl + shift + right | 光标向右选择一个单词 |
+| left | 光标左移一个字符 |
+| right | 光标右移一个字符 |
+| ctrl + left | 光标左移一个单词 |
+| shift + left | 光标向左选择一个字符 |
+| home | 光标跳至行首 |
+| end | 光标跳至行尾 |
+| ctrl + home | 光标跳至文件头 |
+| ctrl + end | 光标跳至文件尾 |
 
 ### Code相关
 
