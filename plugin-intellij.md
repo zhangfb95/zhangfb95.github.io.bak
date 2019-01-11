@@ -70,6 +70,8 @@ permalink: /plugin-intellij/
 
 ### File相关
 
+| windows shortcut | description |
+| --- | --- |
 | ctrl + alt + S | 打开IDE设置窗口 |
 | ctrl + alt + shift + S | 打开当前项目设置窗口 |
 
@@ -92,6 +94,16 @@ permalink: /plugin-intellij/
 | ctrl + shift + J | 将下一行合并到当前行 |
 | ctrl + D | 复制并粘贴当前行 |
 | ctrl + Y | 删除当前行 |
+
+### View相关
+
+| windows shortcut | description |
+| --- | --- |
+| F4 | 跳至光标位置 |
+| ctrl + D | 比较操作 |
+| ctrl + E | 查看最近的文档 |
+| ctrl + shift + E | 查看最近修改的文档 |
+| alt + shift + C | 查看最近的修改 |
 
 ### Code相关
 
