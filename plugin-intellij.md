@@ -16,31 +16,6 @@ permalink: /plugin-intellij/
 
 ## 常用快捷键
 
-| windows shortcut | description |
-| --- | --- |
-| ctrl + shift + U | 选中字符大小写转换 |
-| ctrl + alt + V | 提取局部变量 |
-| ctrl + alt + C | 提取常量 |
-| ctrl + alt + P | 提取方法变量 |
-| ctrl + alt + F | 提取成员变量 |
-| ctrl + alt + M | 提取方法 |
-| ctrl + K | 提交vcs |
-| ctrl + shift + K | 推送vcs |
-| ctrl + alt + K | 提交并推送vcs |
-| ctrl + F9 | 构建整个项目 |
-| ctrl + shift + F9 | 重新构建当前文件 |
-| ctrl + shift + F10 | 运行当前方法或类 |
-| alt + F7 | 查找使用的地方 |
-| ctrl + H | 查找类继承关系 |
-| ctrl + shift + H | 查找方法引用关系 |
-| tab | 添加跳格 |
-| shift + tab | 移除跳格 |
-| ctrl + alt + shift + T | 重构 |
-| shift + F6 | 重命名 |
-| F6 | 移动 |
-| F5 | 拷贝 |
-| alt + delete | 安全删除 |
-
 ### File相关
 
 | windows shortcut | description |
@@ -71,6 +46,10 @@ permalink: /plugin-intellij/
 | ctrl + R | 在当前文档中替换 |
 | ctrl + shift + F | 所有位置查找 |
 | ctrl + shift + R | 所有位置替换 |
+| ctrl + shift + U | 选中字符大小写转换 |
+| alt + F7 | 查找使用的地方 |
+| tab | 添加跳格 |
+| shift + tab | 移除跳格 |
 
 ### View相关
 
@@ -117,6 +96,8 @@ permalink: /plugin-intellij/
 | end | 光标跳至行尾 |
 | ctrl + home | 光标跳至文件头 |
 | ctrl + end | 光标跳至文件尾 |
+| ctrl + H | 查找类继承关系 |
+| ctrl + shift + H | 查找方法引用关系 |
 
 ### Code相关
 
@@ -138,6 +119,29 @@ permalink: /plugin-intellij/
 | alt + shift + down | 光标所在行下移 |
 | Alt + insert | 弹出生成菜单（【注】：在hp笔记本中，fn+e表示insert键） |
 
+### Refactor相关
+
+| windows shortcut | description |
+| --- | --- |
+| ctrl + alt + V | 提取局部变量 |
+| ctrl + alt + C | 提取常量 |
+| ctrl + alt + P | 提取方法变量 |
+| ctrl + alt + F | 提取成员变量 |
+| ctrl + alt + M | 提取方法 |
+| F6 | 移动 |
+| F5 | 拷贝 |
+| shift + F6 | 重命名 |
+| ctrl + alt + shift + T | 重构 |
+| alt + delete | 安全删除 |
+
+### Build相关
+
+| windows shortcut | description |
+| --- | --- |
+| ctrl + F9 | 构建整个项目 |
+| ctrl + shift + F9 | 重新构建当前文件 |
+| ctrl + shift + F10 | 运行当前方法或类 |
+
 ### Run相关
 
 | windows shortcut | description |
@@ -153,6 +157,14 @@ permalink: /plugin-intellij/
 | ctrl + F2 | 停止当前进程 |
 | alt + shift + F9 | debug执行 |
 | alt + shift + F10 | 非debug执行 |
+
+### VCS相关
+
+| windows shortcut | description |
+| --- | --- |
+| ctrl + K | 提交vcs |
+| ctrl + shift + K | 推送vcs |
+| ctrl + alt + K | 提交并推送vcs |
 
 ### 快捷键说明
 
