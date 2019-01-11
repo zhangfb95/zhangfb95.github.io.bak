@@ -24,10 +24,6 @@ permalink: /plugin-intellij/
 | ctrl + left | 光标左移一个单词 |
 | shift + left | 光标向左选择一个字符 |
 | ctrl + shift + U | 选中字符大小写转换 |
-| ctrl + B | 跳至方法声明的地方 |
-| ctrl + alt + B | 跳至方法实现的地方 |
-| ctrl + alt + left | 向后推进光标的位置 |
-| ctrl + alt + right | 向前推进光标的位置 |
 | ctrl + alt + V | 提取局部变量 |
 | ctrl + alt + C | 提取常量 |
 | ctrl + alt + P | 提取方法变量 |
@@ -52,21 +48,34 @@ permalink: /plugin-intellij/
 | ctrl + shift + H | 查找方法引用关系 |
 | tab | 添加跳格 |
 | shift + tab | 移除跳格 |
-| ctrl + N | 查找类 |
-| ctrl + shift + N | 查找文件 |
-| ctrl + alt + shift + N | 查找任意资源 |
-| ctrl + G | 跳至指定行 |
-| alt + home | 跳至导航栏 |
-| ctrl + U | 跳至父方法或父类 |
-| ctrl + F12 | 显示当前文件的结构 |
-| ctrl + alt + F12 | 显示文件路径 |
-| alt + up | 移动光标到上一个方法 |
-| alt + down | 移动光标到下一个方法 |
 | ctrl + alt + shift + T | 重构 |
 | shift + F6 | 重命名 |
 | F6 | 移动 |
 | F5 | 拷贝 |
 | alt + delete | 安全删除 |
+
+### Navigate相关
+
+| windows shortcut | description |
+| --- | --- |
+| ctrl + N | 查找类 |
+| ctrl + shift + N | 查找文件 |
+| ctrl + alt + shift + N | 查找任意资源 |
+| ctrl + G | 跳至指定行 |
+| ctrl + alt + left | 向后推进光标的位置 |
+| ctrl + alt + right | 向前推进光标的位置 |
+| alt + home | 跳至导航栏 |
+| ctrl + U | 跳至父方法或父类 |
+| ctrl + B | 跳至方法声明的地方 |
+| ctrl + alt + B | 跳至方法实现的地方 |
+| ctrl + F12 | 显示当前文件的结构 |
+| ctrl + alt + F12 | 显示文件路径 |
+| F2 | 当前文档的下一错误 |
+| shift + F2 | 当前文档的上一错误 |
+| ctrl + alt + shift + up | 当前文档的上一修改点 |
+| ctrl + alt + shift + down | 当前文档的下一修改点 |
+| alt + up | 移动光标到上一个方法 |
+| alt + down | 移动光标到下一个方法 |
 
 ### File相关
 
