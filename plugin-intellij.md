@@ -81,6 +81,9 @@ permalink: /plugin-intellij/
 | ctrl + E | 查看最近的文档 |
 | ctrl + shift + E | 查看最近修改的文档 |
 | alt + shift + C | 查看最近的修改 |
+| ctrl + P | 查看参数信息 |
+| ctrl + shift + P | 查看表达式信息 |
+| ctrl + Q | 查看文档信息 |
 
 ### Navigate相关
 
