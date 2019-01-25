@@ -9,10 +9,14 @@ permalink: /plugin-intellij/
 
 ## 常用插件
 
-+ .ignore -- 用于git忽略文件的功能支持
-+ lombok -- java和lombok集成的插件 
-+ GsonFormat -- json格式化插件
-+ Translate -- 翻译插件，对于英文不是很好的童靴有大用
+| 插件名称 | 插件说明 | 插件链接 |
+| --- | --- |--- |
+| .ignore | 用于git忽略文件的功能支持 | |
+| lombok | java和lombok集成的插件 | |
+| GsonFormat | json格式化插件 | |
+| Translate | 翻译插件，对于英文不是很好的童靴有大用 | |
+| PlantUML integration | 流程图插件，可文本式画流程图 | |
+| CamelCase | 对各种格式进行转换，比如驼峰、下划线和中划线等 | |
 
 ## 常用快捷键
 
