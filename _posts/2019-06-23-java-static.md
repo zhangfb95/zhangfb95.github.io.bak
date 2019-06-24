@@ -27,12 +27,13 @@ static虽然避免了对象的创建，但在实际中，并不会大量地使�
 
 ## static的四种用途
 
-static有以下4种用途，`修饰变量`和`修饰方法`通常会联合起来使用，从而达到单例和缓存的效果。
+static有以下5种用途，`修饰变量`和`修饰方法`通常会联合起来使用，从而达到单例和缓存的效果。
 
 1. 修饰变量
 2. 修饰方法
 3. 修饰代码块
 4. 静态导入包
+5. 静态内部类
 
 #### 1. 修饰变量
 
@@ -168,6 +169,46 @@ public class Main {
 我们很直观地看出了其用法。没错，就是通过`import static {package.clazz.static_param}`和`import static {package.clazz.static_method}`的方式，让静态属性和静态方法可以在使用的时候省略掉所属的类名！
 
 这种方式带来的好处是类名省掉了，但是坏处却也正因为此。在属性名和方法名冲突时，将带来不可预知的编译错误。所以，凡事有利有弊，需要根据业务场景酌情考虑。
+
+#### 5. 静态内部类
+
+static修饰的内部类，将不会持有外部类的对象，使之更容易和外部类进行隔离，降低依赖。这种方式特别适合一种场景 - `希望将逻辑紧密的对象写在一个文件，降低阅读和修改成本，同时又使其相互独立`。例如：在设计接口返回类时，返回包含一个泛型List。
+
+```java
+public class UserResponse {
+    private List<Book> books; // 阅读书籍列表
+
+    public static class Book {
+        private String name; // 姓名
+        private String viewCount; // 浏览数
+        private String followCount; // 喜欢数
+    }
+}
+```
+
+相对于static静态内部类，非static修饰的内部类，在创建类之前必须先创建外部类。我们来看一个例子：
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // 正确的方式
+        new Inner();
+        System.out.println(new Main().new Inner2());
+
+        // 错误的方式，将产生编译错误 - Error:(11, 9) java: 无法从静态上下文中引用非静态 变量 this
+        new Inner2();
+
+        // 错误的方式，将产生编译错误 - Error:(14, 9) java: 限定的新静态类
+        new Main().new Inner();
+    }
+
+    static class Inner {
+    }
+
+    class Inner2 {
+    }
+}
+```
 
 ## 总结
 
