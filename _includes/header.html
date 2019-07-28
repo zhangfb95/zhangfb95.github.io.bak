@@ -1,60 +1,34 @@
-<header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header" style="display: none;">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">
-        <img src="{{ '/styles/images/logo.jpg' | prepend: site.baseurl }}">
-      </a>
+<header id="top">
+    <div class="wrapper">
+        <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
+        <small>{{site.brief-intro}}</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    {% if page.url == '/' %}
+                    <a class="active" href="{{site.baseurl}}/">
+                        {% else %}
+                    <a href="{{site.baseurl}}/">
+                    {% endif %}
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                {% for my_page in site.pages %}
+                    {% if my_page.type == 'page' %}
+                    <li>
+                        {% if my_page.url == page.url %}
+                        <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
+                            {% else %}
+                        <a href="{{ my_page.url | prepend: site.baseurl }}">
+                        {% endif %}
+                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
+                        </a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">    
-        <li>
-          <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
-        </li>
-        <li>
-          <a href="{{ '/category/' | prepend: site.baseurl }}">Category</a>
-        </li>
-        <li>
-          <a href="{{ '/tag' | prepend: site.baseurl }}">Tag</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          {% assign total = 0 %}
-          {% for post in site.posts %}
-          {% assign total = total | plus: 1 %}
-          {% endfor %}
-            <a><span id="busuanzi_container_site_pv">本站总博客数{{ total }}篇，总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a rel="nofollow" target="_blank" href="{{site.github}}">Github</a></li>
-            <li><a rel="nofollow" href="{{ '/books' | prepend: site.baseurl }}">我的书单</a></li>
-            <li><a rel="nofollow" href="{{ '/overview' | prepend: site.baseurl }}">我的大纲</a></li>
-            <li><a rel="nofollow" href="{{ '/plan' | prepend: site.baseurl }}">我的计划</a></li>
-            <li><a rel="nofollow" href="{{ '/thinkinlife' | prepend: site.baseurl }}">我的警醒</a></li>
-            <li><a rel="nofollow" href="{{ '/tools' | prepend: site.baseurl }}">我的工具</a></li>
-            <li class="divider"></li>
-            <li><a rel="nofollow" href="{{ '/friend' | prepend: site.baseurl }}">业界大佬</a></li>
-            <li><a rel="nofollow" href="{{ '/reference' | prepend: site.baseurl }}">推荐博客</a></li>
-            <li class="divider"></li>
-            <li><a rel="nofollow" href="{{ '/plugin-intellij' | prepend: site.baseurl }}">IntellijIDEA插件</a></li>
-            <li><a rel="nofollow" href="{{ '/plugin-maven' | prepend: site.baseurl }}">Maven插件</a></li>
-            <li><a rel="nofollow" href="{{ '/plugin-chrome' | prepend: site.baseurl }}">Chrome插件</a></li>
-            <li class="divider"></li>
-            <!--<li><a rel="nofollow" target="_blank" href="{{site.resume_site}}">关于作者</a></li>-->
-            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li>-->
-            <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS订阅</a></li>
-            <!--<li class="divider"></li>
-            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>-->
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
 </header>
