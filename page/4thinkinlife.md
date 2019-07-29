@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 个人警醒
+title: 警醒
 permalink: /thinkinlife/
 icon: eye
 type: page

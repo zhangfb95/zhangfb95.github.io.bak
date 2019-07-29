@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 插件列表
+title: 插件
 permalink: /plugin/
 icon: plug
 type: page
