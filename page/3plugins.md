@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Collections
-permalink: /collection/
+title: Plugins
+permalink: /plugin/
 icon: bookmark
 type: page
 ---
