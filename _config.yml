@@ -14,16 +14,16 @@ url: "https://juconcurrent.com" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: 
-facebook_username: zz
+twitter_username: nothing
+facebook_username: nothing
 github_username:  zhangfb95
 email: zhangfb95@aliyun.com
-weibo_username: zz
-zhihu_username: zz
-linkedIn_username: zz
+weibo_username: nothing
+zhihu_username: nothing
+linkedIn_username: nothing
 dribbble_username:
 
-description_footer: 本站记录我前端之旅的沿途风景！
+description_footer: 本站记录我的技术成长之路！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
