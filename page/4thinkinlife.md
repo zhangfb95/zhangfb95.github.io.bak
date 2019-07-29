@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: page
 title: 个人警醒
 permalink: /thinkinlife/
+icon: eye
+type: page
 ---
 
 * content

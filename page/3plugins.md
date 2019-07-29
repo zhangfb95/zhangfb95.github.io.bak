@@ -2,7 +2,7 @@
 layout: page
 title: Plugins
 permalink: /plugin/
-icon: bookmark
+icon: plug
 type: page
 ---
 
