@@ -184,7 +184,7 @@ static final class Node {
 
 ### CLH同步队列结构图
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-99a7ee88395e6330.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-99a7ee88395e6330.png)
 
 ### 入队列
 
@@ -242,7 +242,7 @@ private Node enq(final Node node) {
 ```
 
 如队列的整个过程图如下：
-![image.png](https://upload-images.jianshu.io/upload_images/845143-c0972835c149ddc1.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-c0972835c149ddc1.png)
 
 ## 同步状态获取与释放
 
@@ -306,7 +306,7 @@ final boolean acquireQueued(final Node node, int arg) {
 
 acquire方法的流程图如下
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-75bbb2b9e77d527a.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-75bbb2b9e77d527a.png)
 
 我们接着看一下acquireInterruptibly方法，该方法在获取同步状态的时候，可以响应中断
 
@@ -407,7 +407,7 @@ private boolean doAcquireNanos(int arg, long nanosTimeout) throws InterruptedExc
 ```
 
 整体流程图如下：
-![image.png](https://upload-images.jianshu.io/upload_images/845143-be9128b6302bd990.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-be9128b6302bd990.png)
 
 独占式释放同步状态方法只有一个——`release`
 

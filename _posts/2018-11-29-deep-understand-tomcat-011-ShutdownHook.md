@@ -49,7 +49,7 @@ public class ShutdownHookDemo {
 
 当我们停止进程之后，得到如下输出。
 
-![停止进程效果图](https://upload-images.jianshu.io/upload_images/845143-7b9df9d9fd459b6d.png?jianshufrom=1)
+![停止进程效果图](https://upload-images.jianshu.io/upload_images/845143-7b9df9d9fd459b6d.png)
 
 由此可以验证，java自带的`关闭钩子`是可以生效的。
 

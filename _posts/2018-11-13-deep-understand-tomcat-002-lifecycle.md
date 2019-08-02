@@ -16,7 +16,7 @@ Tomcat里面有各种各样的组件，每个组件各司其职，组件之间�
 ## 什么是Lifecycle?
 
 Lifecycle，其实就是一个状态机，对组件的由生到死状态的管理。我们来看看其总的状态转换图，如下图所示：
-![生命周期状态图](https://upload-images.jianshu.io/upload_images/845143-cd70b24b04d6fba4.png?jianshufrom=1)
+![生命周期状态图](https://upload-images.jianshu.io/upload_images/845143-cd70b24b04d6fba4.png)
 
 1. 当组件在`STARTING_PREP`、`STARTING`或`STARTED`时，调用`start()`方法没有任何效果
 2. 当组件在`NEW`状态时，调用`start()`方法会导致`init()`方法被立刻执行，随后`start()`方法被执行

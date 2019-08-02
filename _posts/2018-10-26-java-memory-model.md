@@ -40,7 +40,7 @@ Java为了提高程序执行效率，将内存分为两种：主内存和本地�
 
 下图为两者之间的关系
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-6e47212a49a3a124.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-6e47212a49a3a124.png)
 
 
 # 重排序

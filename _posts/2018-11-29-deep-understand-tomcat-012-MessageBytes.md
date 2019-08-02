@@ -32,7 +32,7 @@ public static void main(String[] args) {
 
 我们运行一下，看到下面输出，的确和我们预料的一致。
 
-![效果图](https://upload-images.jianshu.io/upload_images/845143-017dc970880aef63.png?jianshufrom=1)
+![效果图](https://upload-images.jianshu.io/upload_images/845143-017dc970880aef63.png)
 
 ## 源码解读
 

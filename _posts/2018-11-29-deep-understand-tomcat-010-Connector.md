@@ -24,11 +24,11 @@ tag: 深入理解Tomcat
 
 先来一张`Connector`的整体结构图
 
-![Connector整体结构图](https://upload-images.jianshu.io/upload_images/845143-3b14ae6c1d58ebbf.png?jianshufrom=1)
+![Connector整体结构图](https://upload-images.jianshu.io/upload_images/845143-3b14ae6c1d58ebbf.png)
 
 【注意】：不同的协议、不同的通信方式，`ProtocolHandler`会有不同的实现。在Tomcat8.5中，`ProtocolHandler`的类继承层级如下图所示。
 
-![ProtocolHandler类继承层级](https://upload-images.jianshu.io/upload_images/845143-8e10276901d6b803.png?jianshufrom=1)
+![ProtocolHandler类继承层级](https://upload-images.jianshu.io/upload_images/845143-8e10276901d6b803.png)
 
 针对上述的类继承层级图，我们做如下说明：
 
@@ -450,7 +450,7 @@ protected final void startAcceptorThreads() {
 
 先给出调用链路图~，该图位于[tomcat官网 - Apache Tomcat 8 Architecture](https://tomcat.apache.org/tomcat-8.5-doc/architecture/requestProcess.html)
 
-![调用链路图](https://upload-images.jianshu.io/upload_images/845143-0531aaf3bb0b333f.png?jianshufrom=1)
+![调用链路图](https://upload-images.jianshu.io/upload_images/845143-0531aaf3bb0b333f.png)
 
 
 ### Acceptor

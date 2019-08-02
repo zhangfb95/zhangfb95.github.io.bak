@@ -17,7 +17,7 @@ tag: 工具
 
 #### 需要对每个IDEA项目，在Settings → Editor → File Encodings中做以下修改。
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-b478657ae325684f.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-b478657ae325684f.png)
 
 
 #### 已存在乱码的properties文件需要做以下修改

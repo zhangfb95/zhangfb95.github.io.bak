@@ -9,7 +9,7 @@ tag: 深入理解Tomcat
 * content
 {:toc}
 
-![Tomcat，喵~](https://upload-images.jianshu.io/upload_images/845143-a996cdedb0494b3a.png?jianshufrom=1)
+![Tomcat，喵~](https://upload-images.jianshu.io/upload_images/845143-a996cdedb0494b3a.png)
 
 
 ## 前言

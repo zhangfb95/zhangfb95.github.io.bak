@@ -82,7 +82,7 @@ tag: 深入理解Java并发
 
 我们运行看到的效果的确和我们猜想的一样，如下图所示。
 
-![执行结果](https://upload-images.jianshu.io/upload_images/845143-4b57b453110cc8a8.png?jianshufrom=1)
+![执行结果](https://upload-images.jianshu.io/upload_images/845143-4b57b453110cc8a8.png)
 
 
 ### 2. schedule Callable
@@ -110,7 +110,7 @@ tag: 深入理解Java并发
 
 运行看到的结果和`Runnable`基本相同，唯一的区别在于`future.get()`能拿到`Callable`返回的真实结果。
 
-![执行结果](https://upload-images.jianshu.io/upload_images/845143-8c3c2958acca6907.png?jianshufrom=1)
+![执行结果](https://upload-images.jianshu.io/upload_images/845143-8c3c2958acca6907.png)
 
 ### 3. scheduleAtFixedRate
 
@@ -136,7 +136,7 @@ tag: 深入理解Java并发
 
 在这个例子中，任务初始延迟1秒，任务执行3秒，任务执行间隔为1秒。我们来看看执行结果：
 
-![执行结果](https://upload-images.jianshu.io/upload_images/845143-0827cfcc6c06801d.png?jianshufrom=1)
+![执行结果](https://upload-images.jianshu.io/upload_images/845143-0827cfcc6c06801d.png)
 
 ### 4. scheduleWithFixedDelay
 
@@ -162,15 +162,15 @@ tag: 深入理解Java并发
 
 在这个例子中，任务初始延迟1秒，任务执行3秒，任务执行间隔为1秒。我们来看看执行结果：
 
-![执行结果](https://upload-images.jianshu.io/upload_images/845143-9cdc36f781858c08.png?jianshufrom=1)
+![执行结果](https://upload-images.jianshu.io/upload_images/845143-9cdc36f781858c08.png)
 
 ### 5. scheduleAtFixedRate和scheduleWithFixedDelay的区别
 
 既然这两个方法都是对任务循环执行，那么他们又有何区别呢？通过jdk文档我们找到了答案。
 
-![scheduleAtFixedRate - javadoc](https://upload-images.jianshu.io/upload_images/845143-13f897d65d974d33.png?jianshufrom=1)
+![scheduleAtFixedRate - javadoc](https://upload-images.jianshu.io/upload_images/845143-13f897d65d974d33.png)
 
-![scheduleWithFixedDelay - javadoc](https://upload-images.jianshu.io/upload_images/845143-5007960988c65afd.png?jianshufrom=1)
+![scheduleWithFixedDelay - javadoc](https://upload-images.jianshu.io/upload_images/845143-5007960988c65afd.png)
 
 > 直白地讲，`scheduleAtFixedRate()`为固定频率，`scheduleWithFixedDelay()`为固定延迟。固定频率是相对于任务执行的开始时间，而固定延迟是相对于任务执行的结束时间，这就是他们最根本的区别！
 

@@ -229,7 +229,7 @@ void consume() {
 
 该图描述了上面的步骤：
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-37cc7bdab827feda.png?jianshufrom=1)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-37cc7bdab827feda.png)
 
 
 ## 总结
