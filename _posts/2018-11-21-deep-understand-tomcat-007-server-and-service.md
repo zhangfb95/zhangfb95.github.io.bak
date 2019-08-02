@@ -15,7 +15,7 @@ tag: 深入理解Tomcat
 
 这儿，我们在[【深入理解Tomcat（三）架构及组件】](https://www.jianshu.com/p/2b6359daf5c8)之上增加一张更为完整的整体结构图！
 
-![整体结构图](https://upload-images.jianshu.io/upload_images/845143-b348216a4be35a7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![整体结构图](https://upload-images.jianshu.io/upload_images/845143-b348216a4be35a7d.png?jianshufrom=true)
 
 在[【深入理解Tomcat（二）Lifecycle】](https://www.jianshu.com/p/2a9ffbd00724)中，我们分析了Lifecycle，也知道了每个tomcat组件都有`init()`、`start()`等生命周期方法。因为Lifecycle是基于模板方法模式设计的，`init()`会调用`initInternal()`，而`start()`会调用`startInternal()`。为了降低分析源码的复杂性，我们在对每个组件进行分析的时候，只会关心生命周期接口下的模板方法，而不会重复分析其下的非模板方法！
 

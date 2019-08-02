@@ -28,7 +28,7 @@ tag: 工具
 
 楼主先根据自己的理解，给出工作流程的整体结构图~
 
-![Git工作流程](https://upload-images.jianshu.io/upload_images/845143-3cf7b480c3827431.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Git工作流程](https://upload-images.jianshu.io/upload_images/845143-3cf7b480c3827431.png?jianshufrom=true)
 
 为了更清楚地说明工作流程，我们给出一定的解释说明
 
@@ -83,7 +83,7 @@ git config user.email nickname@gmail.com # 将用户邮箱设为nickname@gmail.c
 
 所以，团队合作的分支看起来就像这样：
 
-![分支管理策略](https://upload-images.jianshu.io/upload_images/845143-a8f0bc0ad45017f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![分支管理策略](https://upload-images.jianshu.io/upload_images/845143-a8f0bc0ad45017f8.png?jianshufrom=true)
 
 ### 标签管理
 
@@ -95,35 +95,35 @@ git config user.email nickname@gmail.com # 将用户邮箱设为nickname@gmail.c
 
 1. pull操作（快捷键：Ctrl + T）
 
-![pull操作](https://upload-images.jianshu.io/upload_images/845143-530c0cbcdfc000f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![pull操作](https://upload-images.jianshu.io/upload_images/845143-530c0cbcdfc000f9.png?jianshufrom=true)
 
 2. push操作（快捷键：Ctrl + Shift + K）
 
-![push操作](https://upload-images.jianshu.io/upload_images/845143-866dc1e25adcda4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![push操作](https://upload-images.jianshu.io/upload_images/845143-866dc1e25adcda4c.png?jianshufrom=true)
 
 3. 添加操作（快捷键：Ctrl + Alt + A）
 
-![添加操作](https://upload-images.jianshu.io/upload_images/845143-f1aed15542eef09a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![添加操作](https://upload-images.jianshu.io/upload_images/845143-f1aed15542eef09a.png?jianshufrom=true)
 
 4. 提交操作（快捷键：Ctrl + K）
 
-![提交操作](https://upload-images.jianshu.io/upload_images/845143-46dd559ae6a133da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![提交操作](https://upload-images.jianshu.io/upload_images/845143-46dd559ae6a133da.png?jianshufrom=true)
 
 5. 分支管理
 
-![分支管理](https://upload-images.jianshu.io/upload_images/845143-d547f34f353ee176.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![分支管理](https://upload-images.jianshu.io/upload_images/845143-d547f34f353ee176.png?jianshufrom=true)
 
 6. 回退操作（快捷键：Ctrl + Alt + Z）
 
-![回退操作](https://upload-images.jianshu.io/upload_images/845143-924172fe90119a6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![回退操作](https://upload-images.jianshu.io/upload_images/845143-924172fe90119a6d.png?jianshufrom=true)
 
 7. 设置资源库
 
-![设置资源库](https://upload-images.jianshu.io/upload_images/845143-e9185a8d48940de3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![设置资源库](https://upload-images.jianshu.io/upload_images/845143-e9185a8d48940de3.png?jianshufrom=true)
 
 8. 显示修改历史，可显示单个文件，也可以显示整个项目
 
-![显示修改历史](https://upload-images.jianshu.io/upload_images/845143-0d20d8b3e91a82b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![显示修改历史](https://upload-images.jianshu.io/upload_images/845143-0d20d8b3e91a82b0.png?jianshufrom=true)
 
 ## 总结
 

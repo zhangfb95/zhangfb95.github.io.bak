@@ -13,17 +13,17 @@ tag: IntellijIdea
 
 下图为annotate入口位置。
 
-![入口位置](https://upload-images.jianshu.io/upload_images/845143-faee27397ede4ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![入口位置](https://upload-images.jianshu.io/upload_images/845143-faee27397ede4ab1.png?jianshufrom=true)
 
 当提交的author中包含中文的时候，会出现乱码显示的情况，对我们查看提交人信息很不友好，如下图所示。
 
-![中文显示乱码](https://upload-images.jianshu.io/upload_images/845143-6689033692a96f74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![中文显示乱码](https://upload-images.jianshu.io/upload_images/845143-6689033692a96f74.png?jianshufrom=true)
 
 这是因为idea的字体本身不支持中文的原因。怎么处理呢？其实我们只需要更换为支持中文的字体即可。只需要将Font从`Fira Code`变更为`Menlo`就可以了，这样就不会出现乱码问题了，😀
 
-![第一步.png](https://upload-images.jianshu.io/upload_images/845143-860bf2c75cfe33c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![第一步.png](https://upload-images.jianshu.io/upload_images/845143-860bf2c75cfe33c6.png?jianshufrom=true)
 
-![第二步.png](https://upload-images.jianshu.io/upload_images/845143-0e2512e7598955b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![第二步.png](https://upload-images.jianshu.io/upload_images/845143-0e2512e7598955b3.png?jianshufrom=true)
 
 ## 参考链接
 

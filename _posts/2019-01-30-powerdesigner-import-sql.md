@@ -11,9 +11,9 @@ tag: 工具
 
 ## 操作步骤
 
-![操作步骤1](https://upload-images.jianshu.io/upload_images/845143-36617a92ec37ad10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![操作步骤1](https://upload-images.jianshu.io/upload_images/845143-36617a92ec37ad10.png?jianshufrom=true)
 
-![操作步骤2](https://upload-images.jianshu.io/upload_images/845143-2eb0b515f054b21e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![操作步骤2](https://upload-images.jianshu.io/upload_images/845143-2eb0b515f054b21e.png?jianshufrom=true)
 
 放入的代码：
 

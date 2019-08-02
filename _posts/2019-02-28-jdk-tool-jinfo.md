@@ -49,31 +49,31 @@ C:\Users\zhangfubing>jinfo -flag PrintGC 21768
 
 用于开启或关闭虚拟机标记参数。+表示开启，-表示关闭。
 
-![演示效果](https://upload-images.jianshu.io/upload_images/845143-df0d0e4e484cfb01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![演示效果](https://upload-images.jianshu.io/upload_images/845143-df0d0e4e484cfb01.png?jianshufrom=true)
 
 ### 3. -flag <name>=<value>
 
 用于设置虚拟机标记参数，但并不是每个参数都可以被动态修改的。
 
-![演示效果](https://upload-images.jianshu.io/upload_images/845143-aff657dc7bc7815c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![演示效果](https://upload-images.jianshu.io/upload_images/845143-aff657dc7bc7815c.png?jianshufrom=true)
 
 ### 4. -flags
 
 打印虚拟机参数。什么是虚拟机参数呢？如`-XX:NewSize,-XX:OldSize`等就是虚拟机参数。
 
-![演示效果](https://upload-images.jianshu.io/upload_images/845143-44e63a4656ba7669.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![演示效果](https://upload-images.jianshu.io/upload_images/845143-44e63a4656ba7669.png?jianshufrom=true)
 
 ### 5. -sysprops
 
 打印系统参数。
 
-![演示效果](https://upload-images.jianshu.io/upload_images/845143-146000066a075a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![演示效果](https://upload-images.jianshu.io/upload_images/845143-146000066a075a53.png?jianshufrom=true)
 
 ### 6. <no option>
 
 不带任何选项时，会同时打印虚拟机参数和系统参数。
 
-![演示效果](https://upload-images.jianshu.io/upload_images/845143-5d4d4d436129a2a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![演示效果](https://upload-images.jianshu.io/upload_images/845143-5d4d4d436129a2a2.png?jianshufrom=true)
 
 ### 7. -h | -help
 

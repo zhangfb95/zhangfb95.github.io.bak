@@ -141,9 +141,9 @@ t1内部有休眠1s的操作，所以unpark肯定先于park的调用，但是t1�
 
 我们再看看jdk的文档描述
 
-![park描述](https://upload-images.jianshu.io/upload_images/845143-fb0d02b1375a0094.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![park描述](https://upload-images.jianshu.io/upload_images/845143-fb0d02b1375a0094.png?jianshufrom=true)
 
-![unpark描述](https://upload-images.jianshu.io/upload_images/845143-a18a625aba7a45ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![unpark描述](https://upload-images.jianshu.io/upload_images/845143-a18a625aba7a45ea.png?jianshufrom=true)
 
 ## 总结一下
 

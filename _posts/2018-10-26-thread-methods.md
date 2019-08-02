@@ -164,7 +164,7 @@ public class BadSuspend {
 }
 ```
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-2b5a325a548255eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-2b5a325a548255eb.png?jianshufrom=true)
 
 
 ## 常用方法 - interrupt() / boolean isInterrupted() / static boolean interrupted()

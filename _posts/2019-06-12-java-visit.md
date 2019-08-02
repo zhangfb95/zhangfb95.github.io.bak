@@ -57,6 +57,6 @@ public class OuterClass {
 
 说明2的例子：
 
-![private不能修饰外部类](https://upload-images.jianshu.io/upload_images/845143-cda3de9f0348d61c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![private不能修饰外部类](https://upload-images.jianshu.io/upload_images/845143-cda3de9f0348d61c.png?jianshufrom=true)
 
-![protected不能修饰外部类](https://upload-images.jianshu.io/upload_images/845143-ccaa8b7a447340c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![protected不能修饰外部类](https://upload-images.jianshu.io/upload_images/845143-ccaa8b7a447340c9.png?jianshufrom=true)
