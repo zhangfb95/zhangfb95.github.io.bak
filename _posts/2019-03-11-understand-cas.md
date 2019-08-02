@@ -113,7 +113,7 @@ CPU实现原子指令有两种方式：
 
 JDK1.5及以上版本，在`java.util.concurrent.atomic`中提供了很多原子类，其所有方法都具有原子性。
 
-![juc.atomic包](https://upload-images.jianshu.io/upload_images/845143-9cb89b3cd2e1ace9.png?jianshufrom=true)
+![juc.atomic包](https://upload-images.jianshu.io/upload_images/845143-9cb89b3cd2e1ace9.png?jianshufrom=1)
 
 那么，其用法又是怎样的呢？
 

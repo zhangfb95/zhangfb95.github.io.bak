@@ -87,7 +87,7 @@ public class Main {
 
 编译的时候报如下错误
 
-![编译出错](https://upload-images.jianshu.io/upload_images/845143-0d0891b913e7a32e.png?jianshufrom=true)
+![编译出错](https://upload-images.jianshu.io/upload_images/845143-0d0891b913e7a32e.png?jianshufrom=1)
 
 #### 3. 修饰代码块
 
@@ -134,7 +134,7 @@ public class Client {
 
 输出结果如下，从而验证了我们的想法。
 
-![父子类static](https://upload-images.jianshu.io/upload_images/845143-ac98f3eea3d8a0cb.png?jianshufrom=true)
+![父子类static](https://upload-images.jianshu.io/upload_images/845143-ac98f3eea3d8a0cb.png?jianshufrom=1)
 
 #### 4. 静态导入包
 

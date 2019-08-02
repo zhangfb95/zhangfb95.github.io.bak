@@ -27,24 +27,24 @@ Definitions:
 
 1. 不带任何参数，默认列出进程pid和简单的class或jar名称
 
-![不带任何参数](https://upload-images.jianshu.io/upload_images/845143-d465e00f84158a4c.png?jianshufrom=true)
+![不带任何参数](https://upload-images.jianshu.io/upload_images/845143-d465e00f84158a4c.png?jianshufrom=1)
 
 
 2. -q，仅显示进程编号，不显示class、jar及传入参数等其他信息.
 
-![参数，-q](https://upload-images.jianshu.io/upload_images/845143-132818c709bd4127.png?jianshufrom=true)
+![参数，-q](https://upload-images.jianshu.io/upload_images/845143-132818c709bd4127.png?jianshufrom=1)
 
 3. -m，输出main()函数传入的参数
 
-![参数，-m](https://upload-images.jianshu.io/upload_images/845143-95d0470146aedf28.png?jianshufrom=true)
+![参数，-m](https://upload-images.jianshu.io/upload_images/845143-95d0470146aedf28.png?jianshufrom=1)
 
 4. -l，输出应用程序主类的完整package名称或完整jar名称.
 
-![参数，-l](https://upload-images.jianshu.io/upload_images/845143-564e79de0329e9cc.png?jianshufrom=true)
+![参数，-l](https://upload-images.jianshu.io/upload_images/845143-564e79de0329e9cc.png?jianshufrom=1)
 
 5. -v，列出jvm参数。如：-Xms20m -Xmx50m，是启动程序时所指定的jvm参数
 
-![参数，-v](https://upload-images.jianshu.io/upload_images/845143-b2caafef4c0863dd.png?jianshufrom=true)
+![参数，-v](https://upload-images.jianshu.io/upload_images/845143-b2caafef4c0863dd.png?jianshufrom=1)
 
 6. -V:输出通过.hotsportrc或-XX:Flags=<filename>指定的jvm参数
 
@@ -90,9 +90,9 @@ Java程序在启动以后，会在`java.io.tmpdir`所在的目录下，生成一
     + Linux：/tmp/hsperfdata_{userName}/
     + Windows：C:\Users\\{userName}\AppData\Local\Temp\hsperfdata_{userName}
 
-![linux演示](https://upload-images.jianshu.io/upload_images/845143-3a095371d335e6d9.png?jianshufrom=true)
+![linux演示](https://upload-images.jianshu.io/upload_images/845143-3a095371d335e6d9.png?jianshufrom=1)
 
-![Windows演示](https://upload-images.jianshu.io/upload_images/845143-0509ca024eb66b91.png?jianshufrom=true)
+![Windows演示](https://upload-images.jianshu.io/upload_images/845143-0509ca024eb66b91.png?jianshufrom=1)
 
 ## 总结
 

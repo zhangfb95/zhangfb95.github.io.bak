@@ -13,7 +13,7 @@ tag: 深入理解Tomcat
 
 在上一小节我们简单分析了一下Pipeline和Valve，并给出了整体的结构图。而这一节，我们将详细分析Tomcat里面的源码。
 
-![pipeline+valve](https://upload-images.jianshu.io/upload_images/845143-286605040f90d472.png?jianshufrom=true)
+![pipeline+valve](https://upload-images.jianshu.io/upload_images/845143-286605040f90d472.png?jianshufrom=1)
 
 ## Valve
 
@@ -66,7 +66,7 @@ public interface Contained {
 
 从Valve的类层次结构，我们发现几乎所有Valve都继承了`ValveBase`这个抽象类，所以这儿我们需要分析一下它。
 
-![Valve类层次结构](https://upload-images.jianshu.io/upload_images/845143-dd669cf1ca0d963a.png?jianshufrom=true)
+![Valve类层次结构](https://upload-images.jianshu.io/upload_images/845143-dd669cf1ca0d963a.png?jianshufrom=1)
 
 
 ```java

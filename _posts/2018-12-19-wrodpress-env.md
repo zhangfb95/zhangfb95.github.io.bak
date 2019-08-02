@@ -45,7 +45,7 @@ define("FS_CHMOD_DIR", 0777);
 define("FS_CHMOD_FILE", 0777);
 ```
 
-![修改配置](https://upload-images.jianshu.io/upload_images/845143-beb81c662f07d248.png?jianshufrom=true)
+![修改配置](https://upload-images.jianshu.io/upload_images/845143-beb81c662f07d248.png?jianshufrom=1)
 
 
 ### 2. 在1解决之后，出现了Wordpress安装主题：无法创建目录

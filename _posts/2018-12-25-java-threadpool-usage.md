@@ -37,7 +37,7 @@ tag: 深入理解Java并发
 
 ## 线程池实现原理
 
-![线程池主要处理流程](https://upload-images.jianshu.io/upload_images/845143-19328763889448ab.png?jianshufrom=true)
+![线程池主要处理流程](https://upload-images.jianshu.io/upload_images/845143-19328763889448ab.png?jianshufrom=1)
 
 通过上图，我们看到了线程池的主要处理流程。我们的关注点在于，任务提交之后是怎么执行的。大致如下：
 
@@ -48,7 +48,7 @@ tag: 深入理解Java并发
 
 在jdk里面，我们可以将处理流程描述得更清楚一点。来看看`ThreadPoolExecutor`的处理流程。
 
-![ThreadPoolExecutor的处理流程](https://upload-images.jianshu.io/upload_images/845143-b510ac8252bea486.png?jianshufrom=true)
+![ThreadPoolExecutor的处理流程](https://upload-images.jianshu.io/upload_images/845143-b510ac8252bea486.png?jianshufrom=1)
 
 我们将概念做一下映射。
 
@@ -83,7 +83,7 @@ public class ThreadPoolTest {
 
 所以，理论上只会打印5个不同的线程id，且每个线程id会被打印2次。是不是这样的呢？检验真理最好的方式就是运行一下。我们看看执行结果如何。
 
-![简单例子的执行结果](https://upload-images.jianshu.io/upload_images/845143-ba2b1c69ebb4f35b.png?jianshufrom=true)
+![简单例子的执行结果](https://upload-images.jianshu.io/upload_images/845143-ba2b1c69ebb4f35b.png?jianshufrom=1)
 
 ## Executors
 
@@ -401,7 +401,7 @@ public class ThreadPoolTest {
 
 该代码执行的结果如下。
 
-![image.png](https://upload-images.jianshu.io/upload_images/845143-bf7e0f954421055c.png?jianshufrom=true)
+![image.png](https://upload-images.jianshu.io/upload_images/845143-bf7e0f954421055c.png?jianshufrom=1)
 
 我们循环了5次，理论上应该有5个结果被输出。可是最终的执行结果却很让人很意外--只有4次输出。我们进一步分析发现，当第一次循环，除数为0时，理论上应该抛出异常才对，但是这儿却没有，异常被莫名其妙地吞掉了！
 

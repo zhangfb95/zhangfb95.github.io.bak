@@ -43,7 +43,7 @@ public class Main {
 
 分析之前，先给出整体结构图（该图片借用了[Spring Cloud Feign设计原理](https://www.jianshu.com/p/8c7b92b4396c)），以便我们对`Feign`有一个整体的、清晰的认识。
 
-![Feign整体结构图](https://upload-images.jianshu.io/upload_images/845143-eb0edb6dd921e977.png?jianshufrom=true)
+![Feign整体结构图](https://upload-images.jianshu.io/upload_images/845143-eb0edb6dd921e977.png?jianshufrom=1)
 
 ## 启动阶段
 

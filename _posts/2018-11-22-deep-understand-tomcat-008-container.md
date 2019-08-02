@@ -13,7 +13,7 @@ tag: 深入理解Tomcat
 
 在Tomcat中，容器（Container）主要包括四种，Engine、Host、Context和Wrapper。在详细分析tomcat源码之前，我们先来看看容器的类继承层级是怎样的。
 
-![容器类继承层次图](https://upload-images.jianshu.io/upload_images/845143-65ec2c102b86affe.png?jianshufrom=true)
+![容器类继承层次图](https://upload-images.jianshu.io/upload_images/845143-65ec2c102b86affe.png?jianshufrom=1)
 
 这儿，我们先说明一下容器的包含关系。Engine包含多个Host，Host包含多个Context，Context包含多个Wrapper，每个Wrapper对应一个Servlet。我们如何来理解各个容器呢？Tomcat又为什么要把容器分成这4种呢？
 
@@ -34,7 +34,7 @@ http协议从1.1开始，支持在请求头里面添加Host字段用来表示请
 
 其轮廓图如下所示：
 
-![一个tomcat多个域名](https://upload-images.jianshu.io/upload_images/845143-51594604c13bf484.png?jianshufrom=true)
+![一个tomcat多个域名](https://upload-images.jianshu.io/upload_images/845143-51594604c13bf484.png?jianshufrom=1)
 
 要想在tomcat里面支持多域名，我们需要在`server.xml`文件里面的`Engine标签`下面添加多个`Host标签`，如下所示：
 
@@ -47,7 +47,7 @@ http协议从1.1开始，支持在请求头里面添加Host字段用来表示请
 其中name表示域名，appbase表示虚拟主机的目录。
 当我们在浏览器输入`http://www.ramki.com `之后，相应域名将请求到tomcat。tomcat通过读取并搜索`server.xml`，找到www.ramki.com对应的虚拟主机Host，然后就使用查找到的Host来处理请求。
 
-![请求流程](https://upload-images.jianshu.io/upload_images/845143-1c86297ff31ba8b7.png?jianshufrom=true)
+![请求流程](https://upload-images.jianshu.io/upload_images/845143-1c86297ff31ba8b7.png?jianshufrom=1)
 
 在浏览器请求的时候，请求头信息如下，这儿我们重点关注Host header。
 

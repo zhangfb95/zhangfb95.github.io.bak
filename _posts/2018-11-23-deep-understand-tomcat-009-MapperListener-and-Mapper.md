@@ -522,7 +522,7 @@ private void unregisterWrapper(Wrapper wrapper) {
 
 在Mapper中，所有容器都使用`MapElement`来表示，不同的容器有不同的子类实现，我们来看看类继承层级。
 
-![MapElement类继承层级](https://upload-images.jianshu.io/upload_images/845143-6ff1aa16c6189285.png?jianshufrom=true)
+![MapElement类继承层级](https://upload-images.jianshu.io/upload_images/845143-6ff1aa16c6189285.png?jianshufrom=1)
 
 我们从父类`MapElement`开始分析，这是一个protected修饰的抽象类，包含`name`和`object`两个属性。其中`object`是泛型类型。
 

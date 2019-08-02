@@ -31,7 +31,7 @@ Usage: jstat -help|-options
 
 我们通过运行命令`jstat -options`，可以看到显示效果，如下所示：
 
-![jstat -options显示效果](https://upload-images.jianshu.io/upload_images/845143-1e1477393e6abb21.png?jianshufrom=true)
+![jstat -options显示效果](https://upload-images.jianshu.io/upload_images/845143-1e1477393e6abb21.png?jianshufrom=1)
 
 ## 常规命令
 
@@ -55,7 +55,7 @@ Usage: jstat -help|-options
 
 接下来，我们通过命令`jstat -class -h3 -t 317860 1000 6`大致看一下执行效果。
 
-![jstat执行效果](https://upload-images.jianshu.io/upload_images/845143-5fa6744b5b2e3b8b.png?jianshufrom=true)
+![jstat执行效果](https://upload-images.jianshu.io/upload_images/845143-5fa6744b5b2e3b8b.png?jianshufrom=1)
 
 ### -class
 

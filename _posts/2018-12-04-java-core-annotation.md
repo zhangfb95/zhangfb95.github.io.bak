@@ -19,7 +19,7 @@ tag: java
 
 借用网上的一张图，来说明整体结构。
 
-![Annotation整体结构图](https://upload-images.jianshu.io/upload_images/845143-bc038352732d72d2.png?jianshufrom=true)
+![Annotation整体结构图](https://upload-images.jianshu.io/upload_images/845143-bc038352732d72d2.png?jianshufrom=1)
 
 通过这张图我们看到下面的信息
 
@@ -34,7 +34,7 @@ tag: java
 
 先来看看整体结构的左边部分
 
-![整体结构左边部分](https://upload-images.jianshu.io/upload_images/845143-0b5b5732eb05310b.png?jianshufrom=true)
+![整体结构左边部分](https://upload-images.jianshu.io/upload_images/845143-0b5b5732eb05310b.png?jianshufrom=1)
 
 
 `Annotation`关联了3个重要的类，分别为`Annotation`、`ElementType`和`RetentionPolicy`，这3个类所在的包为`java.lang.annotation`，下面我们来看看java里面的定义。
@@ -157,7 +157,7 @@ public @interface MyAnnotation {
 
 我们再来看整体结构的右边部分，我们看到很多我们经常接触到的`Annotation`。我们会逐一来分析一下。
 
-![整体结构的右边部分](https://upload-images.jianshu.io/upload_images/845143-4189f6b5f5cae892.png?jianshufrom=true)
+![整体结构的右边部分](https://upload-images.jianshu.io/upload_images/845143-4189f6b5f5cae892.png?jianshufrom=1)
 
 
 > 【元注解】：网上有`元注解`一说，其实`注解上面的注解叫做元注解`。当我们通过`@Target(ElementType.ANNOTATION_TYPE)`来修饰一个`Annotation`的时候，就表示该`Annotation`是一个元注解。
@@ -203,49 +203,49 @@ public class InheritedTest {
 
 当`Annotation`用`@Inherited`修饰时，运行结果如下：
 
-![使用@Inherited的效果](https://upload-images.jianshu.io/upload_images/845143-417b4b015003564c.png?jianshufrom=true)
+![使用@Inherited的效果](https://upload-images.jianshu.io/upload_images/845143-417b4b015003564c.png?jianshufrom=1)
 
 当`Annotation`不用`@Inherited`修饰时，运行结果如下：
 
-![不使用@Inherited的效果](https://upload-images.jianshu.io/upload_images/845143-31b1c4b700c2771f.png?jianshufrom=true)
+![不使用@Inherited的效果](https://upload-images.jianshu.io/upload_images/845143-31b1c4b700c2771f.png?jianshufrom=1)
 
 ### 2. @Retention
 
 1. `RetentionPolicy.SOURCE`类型的class结构和运行效果
 
-![class结构图](https://upload-images.jianshu.io/upload_images/845143-b0d6503a772dc4d0.png?jianshufrom=true)
+![class结构图](https://upload-images.jianshu.io/upload_images/845143-b0d6503a772dc4d0.png?jianshufrom=1)
 
-![运行效果图](https://upload-images.jianshu.io/upload_images/845143-04358662845d6143.png?jianshufrom=true)
+![运行效果图](https://upload-images.jianshu.io/upload_images/845143-04358662845d6143.png?jianshufrom=1)
 
 2. `RetentionPolicy.CLASS`类型的class结构和运行效果
-![class结构图](https://upload-images.jianshu.io/upload_images/845143-9a6c7adb5efa2e87.png?jianshufrom=true)
+![class结构图](https://upload-images.jianshu.io/upload_images/845143-9a6c7adb5efa2e87.png?jianshufrom=1)
 
-![运行效果图](https://upload-images.jianshu.io/upload_images/845143-7116f3ec55dccfa3.png?jianshufrom=true)
+![运行效果图](https://upload-images.jianshu.io/upload_images/845143-7116f3ec55dccfa3.png?jianshufrom=1)
 
 3. `RetentionPolicy.RUNTIME`类型的class结构和运行效果
-![class结构图](https://upload-images.jianshu.io/upload_images/845143-21d8563a3724bad5.png?jianshufrom=true)
+![class结构图](https://upload-images.jianshu.io/upload_images/845143-21d8563a3724bad5.png?jianshufrom=1)
 
-![运行效果图](https://upload-images.jianshu.io/upload_images/845143-69623165c84b9aa3.png?jianshufrom=true)
+![运行效果图](https://upload-images.jianshu.io/upload_images/845143-69623165c84b9aa3.png?jianshufrom=1)
 
 ### 3. @Target
 
 `ElementType.TYPE`修饰的`Annotation`不能作用于字段和方法，在IntellijIdea里面直接就有错误提示，同时编译的时候也会出错。
 
-![IDEA警告](https://upload-images.jianshu.io/upload_images/845143-0ccb466274d3610c.png?jianshufrom=true)
+![IDEA警告](https://upload-images.jianshu.io/upload_images/845143-0ccb466274d3610c.png?jianshufrom=1)
 
-![编译错误](https://upload-images.jianshu.io/upload_images/845143-d574b0c5305d352b.png?jianshufrom=true)
+![编译错误](https://upload-images.jianshu.io/upload_images/845143-d574b0c5305d352b.png?jianshufrom=1)
 
 ### 4. @Deprecated
 
 使用`@Deprecated`修饰的类或方法，编译不会出错，运行也不会出错，但是会给出警告。
 
-![IDEA警告](https://upload-images.jianshu.io/upload_images/845143-ceebaf237be4d40a.png?jianshufrom=true)
+![IDEA警告](https://upload-images.jianshu.io/upload_images/845143-ceebaf237be4d40a.png?jianshufrom=1)
 
 ### 5. @Override
 
-![IDEA警告](https://upload-images.jianshu.io/upload_images/845143-70f41d25f419fa98.png?jianshufrom=true)
+![IDEA警告](https://upload-images.jianshu.io/upload_images/845143-70f41d25f419fa98.png?jianshufrom=1)
 
-![编译出错](https://upload-images.jianshu.io/upload_images/845143-d8733d39d8e64c0c.png?jianshufrom=true)
+![编译出错](https://upload-images.jianshu.io/upload_images/845143-d8733d39d8e64c0c.png?jianshufrom=1)
 
 `Child.sayHello2()`虽然会有IDEA警告，但是不会编译出错；`Child.sayHello3()`因为使用了`@Override`修饰，但是在父类里面并没有`sayHello3()`这个方法，所以会编译出错；`Child.sayHello1()`属于正常使用。
 
@@ -253,7 +253,7 @@ public class InheritedTest {
 
 `@SuppressWarnings`可用于消除警告，可以消除哪些情况下的警告呢，我们举一个例子。
 
-![例子图](https://upload-images.jianshu.io/upload_images/845143-0e68652861137cfc.png?jianshufrom=true)
+![例子图](https://upload-images.jianshu.io/upload_images/845143-0e68652861137cfc.png?jianshufrom=1)
 
 在这个例子里面
 
