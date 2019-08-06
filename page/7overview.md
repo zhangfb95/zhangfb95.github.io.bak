@@ -20,7 +20,7 @@ type: page
 
 1. Git
 2. Maven
-3. alibaba Arthas
+3. Alibaba Arthas
 4. Intellij IDEA
 5. Jenkins
 6. JMeter
@@ -29,6 +29,8 @@ type: page
 9. XShell
 10. Sonar
 11. Findbugs
+12. VIM
+13. Sublime Text
 
 ## 数据结构和算法
 
@@ -110,11 +112,25 @@ type: page
 ## 网络协议
 
 1. http(s)
-2. tcp/ip
+2. tcp / ip
 3. udp
 4. amqp
 5. mqtt
 6. ssl
+
+## 编程语言
+
+1. C语言
+2. Python语言
+3. Ruby语言
+4. Go语言
+
+## 思维提升
+
+1. 心灵鸡汤
+2. 半月会议
+3. 个人计划
+3. 人生感悟
 
 ## 其他
 
