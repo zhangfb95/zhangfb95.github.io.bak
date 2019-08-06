@@ -31,7 +31,7 @@ type: page
 10. Sonar
 11. Findbugs
 12. VIM
-13. Sublime Text
+13. SublimeText
 
 ## 数据结构和算法
 
@@ -86,7 +86,7 @@ type: page
 7. Logback
 8. Dubbo
 9. Jacoco
-10. Hibernate Validator
+10. HibernateValidator
 11. Lombok
 12. Orika
 

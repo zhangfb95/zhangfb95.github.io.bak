@@ -2,7 +2,7 @@
 layout: post
 title:  sublime3常用插件集合
 date:   2016-01-12 17:33:00 +0800
-categories: Sublime Text
+categories: SublimeText
 tag: 工具
 ---
 

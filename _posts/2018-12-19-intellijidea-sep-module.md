@@ -2,7 +2,7 @@
 layout: post
 title:  Intellij IDEA分离新模块的操作步骤
 date:   2018-12-19 15:47:00 +0800
-categories: Intellij IDEA
+categories: IntellijIDEA
 tag: 工具
 ---
 

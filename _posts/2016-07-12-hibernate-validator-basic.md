@@ -2,7 +2,7 @@
 layout: post
 title:  Hibernate validator基础篇
 date:   2016-07-12 09:40:35 +0800
-categories: Hibernate Validator
+categories: HibernateValidator
 tag: java
 ---
 

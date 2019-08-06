@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解feign（01）-使用入门
 date:   2018-12-06 13:15:00 +0800
-categories: Spring Cloud Feign
+categories: SpringCloud-Feign
 tag: java spring SpringCloud
 ---
 
