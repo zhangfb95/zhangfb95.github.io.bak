@@ -21,8 +21,8 @@ type: page
 
 1. Git
 2. Maven
-3. Alibaba Arthas
-4. Intellij IDEA
+3. AlibabaArthas
+4. IntellijIDEA
 5. Jenkins
 6. JMeter
 7. Jira
@@ -62,12 +62,12 @@ type: page
 5. Web
 6. Security
 
-## Spring Boot
+## SpringBoot
 
 1. 自动配置
 2. 常用starter
 
-## Spring Cloud
+## SpringCloud
 
 1. Eureka
 2. Feign
@@ -77,7 +77,7 @@ type: page
 
 ## 常用框架
 
-1. Mybatis / Mybatis Plus
+1. Mybatis / MybatisPlus
 2. JPA
 3. Junit
 4. HttpClient
@@ -115,12 +115,12 @@ type: page
 
 ## 网络协议
 
-1. http(s)
-2. tcp / ip
-3. udp
-4. amqp
-5. mqtt
-6. ssl
+1. Http(s)
+2. Tcp-Ip
+3. Udp
+4. Amqp
+5. Mqtt
+6. Ssl
 
 ## 编程语言
 
