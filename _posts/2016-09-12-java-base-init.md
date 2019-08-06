@@ -2,7 +2,7 @@
 layout: post
 title:  Java基础（01）初始化动作
 date:   2016-09-12 08:09:34 +0800
-categories: java
+categories: Java基本技能
 tag: java
 ---
 

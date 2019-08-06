@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（五）类加载机制
 date:   2018-11-16 09:51:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

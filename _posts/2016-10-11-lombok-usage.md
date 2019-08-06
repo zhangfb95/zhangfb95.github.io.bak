@@ -2,7 +2,7 @@
 layout: post
 title:  lombok使用备忘
 date:   2016-10-11 10:07:32 +0800
-categories: java
+categories: Lombok
 tag: java
 ---
 

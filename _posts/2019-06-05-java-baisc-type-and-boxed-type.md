@@ -2,7 +2,7 @@
 layout: post
 title:  Java基本数据类型及其包装类型
 date:   2019-06-05 00:03:00 +0800
-categories: java
+categories: Java基本技能
 tag: java
 ---
 

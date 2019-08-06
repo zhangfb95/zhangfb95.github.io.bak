@@ -2,7 +2,7 @@
 layout: post
 title:  java线程池陷阱分析
 date:   2016-10-12 06:07:32 +0800
-categories: java
+categories: Java并发和多线程
 tag: java
 ---
 

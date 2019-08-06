@@ -2,7 +2,7 @@
 layout: post
 title:  前端js&jQuery温故而知新
 date:   2019-04-21 23:36:00 +0800
-categories: 工具
+categories: 其他
 tag: 工具
 ---
 

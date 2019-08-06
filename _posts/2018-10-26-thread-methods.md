@@ -2,7 +2,7 @@
 layout: post
 title:  Thread的过期方法和常用方法
 date:   2018-10-26 22:59:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

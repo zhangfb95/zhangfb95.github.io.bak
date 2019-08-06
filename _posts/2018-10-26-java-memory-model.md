@@ -2,7 +2,7 @@
 layout: post
 title:  Java内存模型
 date:   2018-10-26 23:01:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

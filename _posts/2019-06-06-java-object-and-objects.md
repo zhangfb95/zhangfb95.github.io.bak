@@ -2,7 +2,7 @@
 layout: post
 title:  Java中的Object和Objects
 date:   2019-06-06 23:47:00 +0800
-categories: java
+categories: Java基本技能
 tag: java
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  本地如何搭建WordPress博客
 date:   2018-12-19 15:35:00 +0800
-categories: 工具
+categories: 其他
 tag: 工具
 ---
 

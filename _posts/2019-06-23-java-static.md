@@ -2,7 +2,7 @@
 layout: post
 title:  Java中的static关键字
 date:   2019-06-23 00:02:00 +0800
-categories: java
+categories: Java基本技能
 tag: java
 ---
 

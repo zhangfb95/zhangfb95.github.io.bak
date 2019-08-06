@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（二）Lifecycle
 date:   2018-11-13 09:22:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

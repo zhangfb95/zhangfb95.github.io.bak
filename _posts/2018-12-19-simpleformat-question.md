@@ -2,7 +2,7 @@
 layout: post
 title:  SimpleDateFormat安全性问题
 date:   2018-12-19 15:46:00 +0800
-categories: 工具
+categories: Java基本技能
 tag: 工具
 ---
 

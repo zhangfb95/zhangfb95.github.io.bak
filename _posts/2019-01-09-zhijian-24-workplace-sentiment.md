@@ -2,7 +2,7 @@
 layout: post
 title:  【转自"阿里至简"】一位70后程序员的24个职场感悟
 date:   2019-01-09 11:19:00 +0800
-categories: tools
+categories: 心灵鸡汤
 tag: tools
 ---
 

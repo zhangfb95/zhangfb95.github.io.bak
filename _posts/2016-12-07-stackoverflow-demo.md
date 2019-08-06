@@ -3,15 +3,7 @@ layout: post
 title:  "谨防stackOverFlowError陷阱"
 date:   2016-12-07 10:20:37 +0200
 uuid:   339105F6-879E-2846-B249-CD834D1D986A
-categories: mix
----
-
----
-layout: post
-title:  谨防stackOverFlowError陷阱
-date:   2016-12-07 10:20:37 +0800
-categories: mix
-tag: mix
+categories: Java基本技能
 ---
 
 * content

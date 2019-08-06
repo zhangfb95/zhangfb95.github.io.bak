@@ -2,7 +2,7 @@
 layout: post
 title:  Java线程池的使用
 date:   2018-12-25 23:55:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

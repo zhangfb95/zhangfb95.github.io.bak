@@ -2,7 +2,7 @@
 layout: post
 title:  在sublime3中写markdown文档
 date:   2016-01-12 15:41:00 +0800
-categories: 工具
+categories: Sublime Text
 tag: 工具
 ---
 

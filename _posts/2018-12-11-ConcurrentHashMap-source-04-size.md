@@ -2,7 +2,7 @@
 layout: post
 title:  ConcurrentHashMap源码分析(04)-size()方法
 date:   2018-12-11 19:34:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

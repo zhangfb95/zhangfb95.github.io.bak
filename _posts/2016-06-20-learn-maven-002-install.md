@@ -2,7 +2,7 @@
 layout: post
 title:  Maven前世今生（2）—安装
 date:   2016-06-20 23:04:00 +0800
-categories: 工具
+categories: Maven
 tag: 工具
 ---
 

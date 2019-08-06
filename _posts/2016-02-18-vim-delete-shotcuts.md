@@ -2,7 +2,7 @@
 layout: post
 title:  vim笔记（2）删除快捷键
 date:   2016-02-18 17:30:00 +0800
-categories: 工具
+categories: VIM
 tag: 工具
 ---
 

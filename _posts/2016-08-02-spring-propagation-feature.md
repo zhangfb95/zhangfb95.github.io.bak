@@ -2,7 +2,7 @@
 layout: post
 title:  Spring事务管理的Propagation特性
 date:   2016-08-02 09:29:00 +0800
-categories: Spring
+categories: Spring AOP
 tag: Spring
 ---
 

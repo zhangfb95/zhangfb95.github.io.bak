@@ -2,7 +2,7 @@
 layout: post
 title:  properties文件乱码解决方案
 date:   2019-05-05 22:31:00 +0800
-categories: 工具
+categories: 其他
 tag: 工具
 ---
 

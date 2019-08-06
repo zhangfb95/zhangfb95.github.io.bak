@@ -2,7 +2,7 @@
 layout: post
 title:  AbstractQueuedSynchronizer(AQS)源码解析
 date:   2018-10-31 09:53:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

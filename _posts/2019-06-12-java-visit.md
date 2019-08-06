@@ -2,7 +2,7 @@
 layout: post
 title:  Java中的访问修饰符
 date:   2019-06-12 21:33:00 +0800
-categories: java
+categories: Java基本技能
 tag: java
 ---
 

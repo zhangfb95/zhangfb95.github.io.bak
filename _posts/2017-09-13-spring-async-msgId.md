@@ -2,7 +2,7 @@
 layout: post
 title:  spring async中传递线程上下文变量
 date:   2017-09-13 06:00:23 +0800
-categories: java
+categories: Java并发和多线程
 tag: java
 ---
 

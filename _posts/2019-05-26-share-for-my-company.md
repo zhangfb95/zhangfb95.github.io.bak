@@ -2,7 +2,7 @@
 layout: post
 title:  转正分享
 date:   2019-05-26 22:41:00 +0800
-categories: 其他
+categories: 半月会议
 tag: 其他
 ---
 

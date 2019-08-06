@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（一）简介
 date:   2018-11-12 15:50:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  关于char数组的三个算法题
 date:   2018-12-18 18:08:00 +0800
-categories: 工具
+categories: 数据结构和算法
 tag: 工具
 ---
 

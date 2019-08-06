@@ -2,7 +2,7 @@
 layout: post
 title:  Git常用开发流程
 date:   2019-01-30 23:23:00 +0800
-categories: 工具
+categories: Git
 tag: 工具
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  Maven前世今生（1）—简介
 date:   2016-06-20 22:41:00 +0800
-categories: 工具
+categories: Maven
 tag: 工具
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  App版本升级兼容性思考
 date:   2016-08-04 09:28:14 +0800
-categories: appUpgrade
+categories: 其他
 tag: upgrade
 ---
 

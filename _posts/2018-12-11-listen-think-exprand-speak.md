@@ -2,7 +2,7 @@
 layout: post
 title:  听后感 -《读书分享-提高演讲能力》
 date:   2018-12-11 20:36:00 +0800
-categories: 工具
+categories: 心灵鸡汤
 tag: 工具
 ---
 

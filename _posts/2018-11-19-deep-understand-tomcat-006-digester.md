@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（六）Digester组件
 date:   2018-11-19 23:52:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

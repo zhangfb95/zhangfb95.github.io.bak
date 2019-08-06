@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（四）Pipeline和Valve
 date:   2018-11-14 16:59:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

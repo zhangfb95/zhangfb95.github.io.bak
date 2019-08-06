@@ -2,7 +2,7 @@
 layout: post
 title:  怎么算是Java高级开发工程师
 date:   2019-03-18 23:35:00 +0800
-categories: 工具
+categories: Java基本技能
 tag: 工具
 ---
 

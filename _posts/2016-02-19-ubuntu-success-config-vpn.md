@@ -2,7 +2,7 @@
 layout: post
 title:  ubuntu中成功配置vpn
 date:   2016-02-19 16:07:00 +0800
-categories: 工具
+categories: 其他
 tag: 工具
 ---
 

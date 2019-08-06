@@ -2,7 +2,7 @@
 layout: post
 title:  Java定时调度机制 - ScheduledExecutorService
 date:   2019-01-19 23:55:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

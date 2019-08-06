@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（12）拾遗-MessageBytes
 date:   2018-12-03 11:10:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

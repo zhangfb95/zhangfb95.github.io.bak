@@ -2,7 +2,7 @@
 layout: post
 title:  YAML语言
 date:   2016-09-09 09:28:14 +0800
-categories: yaml
+categories: 其他
 tag: yaml
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  vim笔记（1）三种模式
 date:   2016-02-18 17:25:00 +0800
-categories: 工具
+categories: VIM
 tag: 工具
 ---
 

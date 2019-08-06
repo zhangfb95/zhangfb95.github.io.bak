@@ -2,7 +2,7 @@
 layout: post
 title:  Java基础（02）异常处理
 date:   2016-10-09 11:14:34 +0800
-categories: java
+categories: Java基本技能
 tag: java
 ---
 

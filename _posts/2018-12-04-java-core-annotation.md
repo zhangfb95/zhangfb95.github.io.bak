@@ -2,7 +2,7 @@
 layout: post
 title:  Java注解(annotation)机制
 date:   2018-12-04 16:16:00 +0800
-categories: 深入理解Java核心
+categories: Java基本技能
 tag: java
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  Java线程池源码分析
 date:   2018-12-28 23:57:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

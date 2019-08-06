@@ -2,7 +2,7 @@
 layout: post
 title:  Jackson实现自定义序列化器
 date:   2016-11-03 09:35:01 +0800
-categories: json
+categories: Jackson
 tag: json
 ---
 

@@ -15,6 +15,7 @@ type: page
 1. 基本技能
 2. 并发和多线程
 3. GC和JVM
+4. JVM工具
 
 ## 常用工具
 
@@ -85,6 +86,9 @@ type: page
 7. Logback
 8. Dubbo
 9. Jacoco
+10. Hibernate Validator
+11. Lombok
+12. Orika
 
 ## 中间件
 
@@ -97,7 +101,7 @@ type: page
 7. RabbitMQ
 8. Netty
 9. Zookeeper
-10. ElasticSearch
+10. Elasticsearch
 11. Kibana
 12. Logstash
 13. Apollo

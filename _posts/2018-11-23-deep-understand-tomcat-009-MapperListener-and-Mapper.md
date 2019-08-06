@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（九）MapperListener和Mapper
 date:   2018-11-23 23:38:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

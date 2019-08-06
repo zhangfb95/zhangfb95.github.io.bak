@@ -2,7 +2,7 @@
 layout: post
 title:  jdk工具-jinfo
 date:   2019-02-28 23:18:00 +0800
-categories: 深入理解Java核心
+categories: JVM工具
 tag: java
 ---
 

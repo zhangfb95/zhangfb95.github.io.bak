@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（11）拾遗-关闭钩子
 date:   2018-11-29 22:37:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  JSON语言
 date:   2016-09-09 03:52:14 +0800
-categories: json
+categories: 其他
 tag: json
 ---
 

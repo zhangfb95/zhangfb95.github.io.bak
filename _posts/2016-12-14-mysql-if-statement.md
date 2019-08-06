@@ -2,7 +2,7 @@
 layout: post
 title:  mysql中IF语句用法
 date:   2016-12-14 09:25:51 +0800
-categories: mysql
+categories: Mysql
 tag: mysql
 ---
 

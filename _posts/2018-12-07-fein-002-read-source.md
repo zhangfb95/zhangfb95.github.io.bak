@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解feign（02）-源码解析
 date:   2018-12-07 18:10:00 +0800
-categories: SpringCloud
+categories: Spring Cloud Feign
 tag: java spring SpringCloud
 ---
 

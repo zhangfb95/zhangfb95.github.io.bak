@@ -2,7 +2,7 @@
 layout: post
 title:  深入理解Tomcat（十）Connector
 date:   2018-11-29 21:43:00 +0800
-categories: 深入理解Tomcat
+categories: Tomcat
 tag: 深入理解Tomcat
 ---
 

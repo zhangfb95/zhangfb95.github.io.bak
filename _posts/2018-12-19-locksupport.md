@@ -2,7 +2,7 @@
 layout: post
 title:  LockSupport的用法及原理
 date:   2018-12-19 15:56:00 +0800
-categories: 深入理解Java并发
+categories: Java并发和多线程
 tag: 深入理解Java并发
 ---
 

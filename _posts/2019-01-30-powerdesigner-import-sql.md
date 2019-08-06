@@ -2,7 +2,7 @@
 layout: post
 title:  【转】PowerDesigner导入SQL注释丢失问题解决
 date:   2019-01-30 13:19:00 +0800
-categories: 工具
+categories: 其他
 tag: 工具
 ---
 

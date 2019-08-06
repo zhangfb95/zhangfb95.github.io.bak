@@ -2,7 +2,7 @@
 layout: post
 title:  理解MySQL中的explain
 date:   2018-12-16 18:54:00 +0800
-categories: 工具
+categories: Mysql
 tag: 工具
 ---
 

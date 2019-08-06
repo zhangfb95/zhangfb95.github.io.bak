@@ -2,7 +2,7 @@
 layout: post
 title:  2019-07-13半月会议心得
 date:   2019-07-15 00:14:30 +0800
-categories: 其他
+categories: 半月会议
 tag: 其他
 ---
 
