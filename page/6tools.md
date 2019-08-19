@@ -30,3 +30,5 @@ type: page
 + Typora -- markdown可视化编辑&查看工具
 + Docker -- 容器化工具
 + Jenkins -- 用于CI的一个工具
++ Upsource -- 用于代码评审的软件，可简化评审的过程
++ Teambition -- 一个商业的敏捷管理工具，可对迭代进行管理
