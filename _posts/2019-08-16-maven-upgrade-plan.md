@@ -61,7 +61,7 @@ Jenkins Job的链接地址为：http://testjenkins.xxcompany.com/view/test/job/b
 
 第一步、增加参数化配置，用于外部传入待升级的版本号
 
-![Jenkins的配置信息](https://upload-images.jianshu.io/upload_images/845143-2c9f49815c07b962.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Jenkins的配置信息](https://upload-images.jianshu.io/upload_images/845143-2c9f49815c07b962.png)
 
 第二步、在Jenkins中增加shell脚本的执行，用于配置待升级的git工程
 
