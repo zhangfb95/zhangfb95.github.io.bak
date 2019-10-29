@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Docker Desktop: Error response from daemon: driver failed programming external connectivity on en...
+title:  Docker Desktop Error response from daemon driver failed programming external connectivity on 
 date:   2019-10-18 23:41:38 +0800
 categories: Docker
 tag: Docker
