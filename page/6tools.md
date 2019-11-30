@@ -22,6 +22,7 @@ type: page
 + TeamViewer -- 远程连接windows服务器的代理客户端
 + Navicat -- 数据库可视化客户端，可用于ddl/dml的执行、创建库、创建表、修改表结构等操作
 + MySQLWorkbench -- 数据库可视化客户端，mysql官方提供技术支持
++ DBeaver -- 数据库可视化客户端，开源免费版
 + 云笔记：有道云笔记 / 印象笔记 / 为知笔记
 + XMind -- 一款离线的思维导图软件，跨平台（可在windows、mac、linux等平台使用）
 + LICEcap - 用于录制、生成gif动态图片
