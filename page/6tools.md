@@ -33,3 +33,5 @@ type: page
 + Upsource -- 用于代码评审的软件，可简化评审的过程
 + Teambition -- 一个商业的敏捷管理工具，可对迭代进行管理
 + 小黄条 -- 一个非常简洁的todo软件，参考官网：http://www.yynote.cn/
++ XShell -- 一个linux终端软件
++ XFtp -- 一个ftp终端软件
