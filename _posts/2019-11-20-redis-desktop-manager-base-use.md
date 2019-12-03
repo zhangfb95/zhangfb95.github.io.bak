@@ -3,7 +3,7 @@ layout: post
 title:  深入使用RedisDesktopManager
 date:   2019-11-20 20:25:32 +0800
 categories: RedisDesktopManager
-tag: RedisDesktopManager 工具
+tags: RedisDesktopManager 工具
 ---
 
 * content
