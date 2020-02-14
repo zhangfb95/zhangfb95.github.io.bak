@@ -99,6 +99,12 @@ layout: default
     for (var i = 0; i < aTags.length; i++) {
         aTags[i].setAttribute('target', '_blank')
     }
+}());
+</script>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ " /js/gitment.browser.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<link rel="stylesheet" href="{{ "/css/gitment.default.css" | prepend: site.baseurl }}">
+<script>
     var gitment = new Gitment({
         owner: 'zhangfb95',
         repo: 'zhangfb95.github.io',
@@ -109,9 +115,4 @@ layout: default
         },
     });
     gitment.render('gitmentContainer')
-}());
 </script>
-<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ " /js/gitment.browser.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ "/js/gitment.browser.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<link rel="stylesheet" href="{{ "/css/gitment.default.css " | prepend: site.baseurl }}">
