@@ -68,19 +68,6 @@ layout: default
         {% include comments.html %}-->
         <div id="gitmentContainer"></div>
         <!-- 评论系统 -->
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script type="text/javascript" src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-        <script>
-            var gitment = new Gitment({
-                owner: 'zhangfb95',
-                repo: 'zhangfb95.github.io',
-                oauth: {
-                    client_id: '149e5b6e041c132774ed',
-                    client_secret: '466d064fad0c080fcad4dbb5d964ebfa30bad676',
-                },
-            });
-            gitment.render('gitmentContainer')
-        </script>
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">
@@ -112,6 +99,19 @@ layout: default
     for (var i = 0; i < aTags.length; i++) {
         aTags[i].setAttribute('target', '_blank')
     }
+    var gitment = new Gitment({
+        owner: 'zhangfb95',
+        repo: 'zhangfb95.github.io',
+        oauth: {
+            client_id: '149e5b6e041c132774ed',
+            client_secret
+                : '466d064fad0c080fcad4dbb5d964ebfa30bad676',
+        },
+    });
+    gitment.render('gitmentContainer')
 }());
 </script>
 <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ " /js/gitment.browser.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ "/js/gitment.browser.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<link rel="stylesheet" href="{{ "/css/gitment.default.css " | prepend: site.baseurl }}">
