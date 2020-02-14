@@ -66,8 +66,28 @@ layout: default
 
         <!--<h2 id="comments">Comments</h2>
         {% include comments.html %}-->
+        {% if site.comment_gitment_repo %}
+        <div id="gitmentContainer"></div>
+            <!-- 评论系统 -->
+            <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+            <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 
-
+            <!-- 汉化支持 -->
+            <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+            <script src="https://billts.site/js/gitment.js"></script>
+            <script>
+                var gitment = new Gitment({
+                    id: '<%= page.date %>',
+                    owner: '{{site.github_username}}',
+                    repo: '{{site.comment_gitment_repo}}',
+                    oauth: {
+                        client_id: '{{site.comment_gitment_clientId}}',
+                        client_secret: '{{site.comment_gitment_clientSecret}}',
+                    },
+                });
+                gitment.render('gitmentContainer')
+            </script>
+        {% endif %}
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">

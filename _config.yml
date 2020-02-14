@@ -58,3 +58,11 @@ excerpt_separator: ""
 # paginate
 gems: [jekyll-paginate]
 paginate: 10
+
+gitment:
+  enable: true
+  githubID: zhangfb95
+  repo: zhangfb95.github.io
+  ClientID: 149e5b6e041c132774ed
+  ClientSecret: 466d064fad0c080fcad4dbb5d964ebfa30bad676
+  lazy: true
