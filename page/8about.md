@@ -11,7 +11,7 @@ type: page
 
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/zhangfb95?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+![](https://raw.githubusercontent.com/zhangfb95/picgo/master/qrcode_for_gh_e8e0e4cd3f9c_258_wps%E5%9B%BE%E7%89%87.jpg)
 
 ## 联系我
 
