@@ -1,0 +1,79 @@
+---
+layout: default
+title: qa
+permalink: /qa/
+icon: th-list
+type: page
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var qalist = [
+            {
+                "q": "q1",
+                "a": "a1"
+            }, {
+                "q": "q2",
+                "a": "a2"
+            }, {
+                "q": "q3",
+                "a": "a3"
+            }, {
+                "q": "q4",
+                "a": "a4"
+            }
+        ];
+
+        var num = 3;
+        var existed = [];
+
+        $("#reset").click(function () {
+            $("#content").html("");
+            existed = [];
+        });
+        $("#next").click(function () {
+            while (true) {
+                if (existed.length >= num) {
+                    break;
+                }
+                if (!insert()) {
+                    break;
+                }
+            }
+        });
+
+        $("body").on('click', '.question', function () {
+            var node = $(this).next();
+            if (node.is(':hidden')) {
+                node.show();
+            } else {
+                node.hide();
+            }
+        });
+
+        function insert() {
+            var rand = Math.round(Math.random() * qalist.length);
+            if (rand >= qalist.length || rand < 0) {
+                return false;
+            }
+            var isContain = false;
+            for (var i in existed) {
+                if (rand === existed[i]) {
+                    isContain = true;
+                }
+            }
+            if (!isContain) {
+                existed.push(rand);
+                $("#content").append("<p class='question' style='word-break: break-all;word-wrap: break-word;overflow: hidden'>q: " + qalist[rand].q + "</p>" +
+                    "<p class='answer' style='display: none;'>a: " + qalist[rand].a + "</p><hr/>");
+            }
+            return isContain;
+        }
+    });
+</script>
+<body>
+<button id="reset">Reset</button>
+<button id="next">Next</button>
+<div id="content">
+</div>
