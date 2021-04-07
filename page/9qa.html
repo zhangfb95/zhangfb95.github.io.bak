@@ -32,14 +32,24 @@ type: page
             $("#content").html("");
             existed = [];
         });
+
         $("#next").click(function () {
             while (true) {
-                if (existed.length >= num) {
+                if (existed.length >= num || existed.length >= qalist.length) {
                     break;
                 }
                 if (!insert()) {
                     break;
                 }
+            }
+        });
+
+        $("#nextAll").click(function () {
+            while (true) {
+                if (existed.length >= num || existed.length >= qalist.length) {
+                    break;
+                }
+                insert();
             }
         });
 
@@ -74,6 +84,7 @@ type: page
 </script>
 <body>
 <button id="next" style="float: right;">Next</button>
+<button id="NextAll" style="float: right;">NextAll</button>
 <button id="reset" style="float: right;">Reset</button>
 <div id="content">
 </div>
