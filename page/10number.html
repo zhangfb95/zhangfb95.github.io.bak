@@ -1,0 +1,67 @@
+---
+layout: default
+title: 数字游戏
+permalink: /number/
+icon: th-list
+type: page
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var num = "";
+        $("#num0").click(function () {
+            num+="0";
+        });
+        $("#num1").click(function () {
+            num+="1";
+        });
+        $("#num2").click(function () {
+            num+="2";
+        });
+        $("#num3").click(function () {
+            num+="3";
+        });
+        $("#num4").click(function () {
+            num+="4";
+        });
+        $("#num5").click(function () {
+            num+="5";
+        });
+        $("#num6").click(function () {
+            num+="6";
+        });
+        $("#num7").click(function () {
+            num+="7";
+        });
+        $("#num8").click(function () {
+            num+="8";
+        });
+        $("#num9").click(function () {
+            num+="9";
+        });
+        $("#numclear").click(function () {
+            num = "";
+        });
+        $("#numok").click(function () {
+            if (num === "9527") {
+                location.href="https://www.baidu.com";
+            }
+        });
+    });
+</script>
+<body>
+<button id="num0">0</button>
+<button id="num1">1</button>
+<button id="num2">2</button>
+<button id="num3">3</button>
+<button id="num4">4</button>
+<button id="num5">5</button>
+<button id="num6">6</button>
+<button id="num7">7</button>
+<button id="num8">8</button>
+<button id="num9">9</button>
+<button id="numclear">clear</button>
+<button id="numok">ok</button>
+<div id="content">
+</div>
